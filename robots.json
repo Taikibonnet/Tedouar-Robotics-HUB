@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Spot",
+        "slug": "spot",
+        "manufacturer": "Boston Dynamics",
+        "category": "Quadruped",
+        "description": "Spot is a four-legged robot designed for indoor and outdoor operation. It is a nimble robot that climbs stairs and traverses rough terrain with unprecedented ease, yet is small enough to use indoors. Built to be a rugged and customizable platform, Spot has an industry track record in remote operation and autonomous sensing.\n\nSpot's advanced mobility, dexterity, and intelligence enables automation in difficult, dangerous, or inaccessible environments. Spot comes ready to operate, right out of the box. With its built-in stereo cameras, Spot has 360° vision to avoid obstacles, adapt to changing terrain, and enable remote operation. With a top speed of 1.6 m/s, Spot's mobility ensures your dynamic sensing needs are met.",
+        "specifications": "Weight: 32.5 kg (71.7 lbs)\nRuntime: 90 minutes\nSpeed: 1.6 m/s (3.6 mph)\nPayload: Up to 14 kg (30.9 lbs)\nDimensions: 1.1 m (L) × 0.5 m (W) × 0.84 m (H)\nOperating temperature: -20° to 45° C\nDust & water protection: IP54\nBattery: Lithium-ion",
+        "features": "Self-righting capability\nObstacle avoidance\n360° perception\nAPI for custom development\nAutonomous navigation capabilities\nHands-free remote operation\nTeleoperation from tablet interface",
+        "is_featured": 1
+    },
+    {
+        "name": "Atlas",
+        "slug": "atlas",
+        "manufacturer": "Boston Dynamics",
+        "category": "Humanoid",
+        "description": "Atlas is the world's most dynamic humanoid robot. It uses its whole body to perform various physical tasks, combining its advanced mobility, dexterity, and balance to manipulate objects in its environment and travel across rough terrain.\n\nAtlas is capable of parkour, backflips, and complex gymnastics movements that demonstrate extraordinary agility and coordination. The robot stands approximately 1.5 meters tall and weighs around 89 kg. The robot's advanced control system and state-of-the-art hardware give it the power and balance to demonstrate human-level capabilities. It can use its arms to manipulate objects or push itself off the ground, and its legs to balance, walk, jump, and even do a full backflip.",
+        "specifications": "Height: 1.5 m (4.9 ft)\nWeight: 89 kg (196 lbs)\nPower: Electric\n28 hydraulically-actuated joints\nStereo vision, LIDAR, and depth sensors\nOnboard real-time control computer",
+        "features": "Parkour capabilities\nBackflips and gymnastics\nObject manipulation\nDynamic balance\nContinuous motion planning\nReactive behaviors\nWhole-body dynamic planning and control",
+        "is_featured": 1
+    },
+    {
+        "name": "Pepper",
+        "slug": "pepper",
+        "manufacturer": "SoftBank Robotics",
+        "category": "Humanoid",
+        "description": "Pepper is a semi-humanoid robot designed to be a day-to-day companion. With its ability to recognize faces and basic human emotions, Pepper can engage with people through conversation and a touch screen on its chest. It's designed primarily for human interaction and has been employed in various customer service roles.\n\nStanding at 1.2 meters tall, Pepper has a friendly appearance with large expressive eyes and a high-pitched voice designed to seem unthreatening. The robot is equipped with various sensors and cameras that allow it to perceive its environment and respond appropriately. Pepper's design incorporates a holonomic base with three wheels that allows it to move omnidirectionally. It's intended to be a social companion rather than a utility robot for physical tasks.",
+        "specifications": "Height: 120 cm (3.9 ft)\nWeight: 28 kg (62 lbs)\nAutonomy: 12 hours\n20 degrees of freedom\nOmnidirectional wheels\n3D camera for environmental perception\nTouch sensors on head and hands",
+        "features": "Emotion recognition\nMulti-language support\nTouch sensors\nAutonomous navigation\nVoice recognition and natural language processing\nFacial recognition\nTablet interface for enhanced interaction",
+        "is_featured": 0
+    },
+    {
+        "name": "Tesla Optimus",
+        "slug": "tesla-optimus",
+        "manufacturer": "Tesla, Inc.",
+        "category": "Humanoid",
+        "description": "Tesla Optimus, also known as Tesla Bot, is a humanoid robot designed by Tesla, Inc. The robot was first announced in August 2021 during Tesla's AI Day event. Optimus is intended to be friendly, navigate through a world built for humans, and eliminate dangerous, repetitive, and boring tasks.\n\nOptimus is designed with human-like proportions and movements, standing approximately 5'8\" tall and weighing around 125 pounds. It uses the same AI software and hardware that powers Tesla's advanced driver-assistance system, Autopilot. The robot is intended for tasks such as grocery shopping, household chores, and manufacturing work in Tesla factories.",
+        "specifications": "Height: 5'8\" (173 cm)\nWeight: Approximately 125 lbs (57 kg)\nSpeed: Up to 5 mph (8 km/h)\nLoad capacity: 45 lbs (20 kg)\nPower: Electric (Tesla battery technology)\nAI: Neural networks similar to Tesla Autopilot\nVision: 8 cameras and advanced computer vision",
+        "features": "Human-like movement and articulation\nAdvanced AI for understanding natural voice commands\nSafety features to prevent harm to humans\nFace recognition\nLearning capabilities\nWireless connectivity\nTesla FSD (Full Self-Driving) computer adaptation",
+        "is_featured": 1
+    },
+    {
+        "name": "Roomba j7+",
+        "slug": "roomba-j7-plus",
+        "manufacturer": "iRobot",
+        "category": "Consumer",
+        "description": "The Roomba j7+ is an advanced robotic vacuum cleaner that takes home automation to the next level. With its PrecisionVision Navigation, it can identify and avoid obstacles like cords and pet waste, making it smarter about how it cleans your home.\n\nThis model includes the Clean Base Automatic Dirt Disposal system, which allows the robot to empty itself for up to 60 days, saving you from the hassle of frequent emptying. The Roomba j7+ learns your cleaning preferences and offers customized cleaning schedules based on your habits and routines. It even suggests extra cleanings during high pollen seasons or pet shedding periods.",
+        "specifications": "Dimensions: 13.3\" × 13.3\" × 3.4\"\nWeight: 7.49 lbs\nBattery: Lithium Ion\nRuntime: Up to 75 minutes\nCharging Time: 3 hours\nFilter Type: High-Efficiency\nDirt Capacity: 400ml\nControl: Voice, App, or Manual",
+        "features": "PrecisionVision Navigation\nClean Base Automatic Dirt Disposal\nDual Multi-Surface Rubber Brushes\niRobot OS intelligence\n10× Power Lifting Suction\nDirt Detect Technology\nSmart Mapping\nImprint Link Technology for coordination with Braava jet m6",
+        "is_featured": 0
+    }
+]
