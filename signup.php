@@ -2,7 +2,7 @@
 require_once 'includes/config.php';
 require_once 'includes/functions.php';
 
-// If user is already logged in, redirect to appropriate page
+// If user is already logged in, redirect to home
 if (is_logged_in()) {
     header("Location: index.php");
     exit();
@@ -21,12 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validation
     if (empty($username) || empty($email) || empty($password) || empty($confirm_password)) {
         $error_message = "Please fill in all fields.";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error_message = "Please enter a valid email address.";
-    } elseif (strlen($password) < 6) {
-        $error_message = "Password must be at least 6 characters long.";
     } elseif ($password !== $confirm_password) {
         $error_message = "Passwords do not match.";
+    } elseif (strlen($password) < 6) {
+        $error_message = "Password must be at least 6 characters long.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_message = "Please enter a valid email address.";
     } else {
         // Check if username or email already exists
         $sql = "SELECT id FROM users WHERE username = ? OR email = ?";
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
         
-        if (mysqli_num_rows($result) > 0) {
+        if (mysqli_fetch_assoc($result)) {
             $error_message = "Username or email already exists.";
         } else {
             // Create new user
@@ -45,15 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashed_password);
             
             if (mysqli_stmt_execute($stmt)) {
-                $success_message = "Account created successfully! You can now log in.";
-                // Optionally auto-login the user
-                // $user_id = mysqli_insert_id($conn);
-                // $_SESSION['user_id'] = $user_id;
-                // $_SESSION['username'] = $username;
-                // $_SESSION['email'] = $email;
-                // $_SESSION['role'] = 'user';
-                // header("Location: index.php");
-                // exit();
+                $success_message = "Account created successfully! You can now <a href='login.php' style='color: #20e3b2; font-weight: bold;'>login</a>.";
             } else {
                 $error_message = "Error creating account. Please try again.";
             }
@@ -219,8 +211,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         .password-requirements {
-            font-size: 0.8rem;
-            color: #ccc;
+            font-size: 0.85rem;
+            color: #888;
             margin-top: 5px;
         }
     </style>
