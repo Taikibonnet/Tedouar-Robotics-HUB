@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero-robot.png" alt="Robot Illustration">
+                <img src="images/hero-robot.svg" alt="Robot Illustration">
             </div>
         </div>
     </section>
@@ -224,15 +224,6 @@
                 });
             }
             
-            // AI Assistant button
-            const aiButton = document.getElementById('ai-button');
-            if (aiButton) {
-                aiButton.addEventListener('click', function() {
-                    // Simple redirection to /contact.html with query parameter
-                    window.location.href = 'contact.html?assistant=open';
-                });
-            }
-            
             // Load featured robots
             loadFeaturedRobots();
         });
@@ -300,6 +291,22 @@
                     manufacturer: "Tesla, Inc.",
                     image: "images/robots/tesla-optimus.jpg",
                     description: "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation."
+                },
+                {
+                    title: "Boston Dynamics Atlas",
+                    slug: "boston-dynamics-atlas",
+                    category: "Humanoid",
+                    manufacturer: "Boston Dynamics",
+                    image: "images/robots/atlas.jpg",
+                    description: "Atlas is the world's most dynamic humanoid robot, designed to navigate complex terrain and perform athletic movements."
+                },
+                {
+                    title: "Universal Robots UR10",
+                    slug: "universal-robots-ur10",
+                    category: "Industrial",
+                    manufacturer: "Universal Robots",
+                    image: "images/robots/ur10.jpg",
+                    description: "The UR10 is a collaborative industrial robot arm designed for larger payload applications and extended reach."
                 }
             ];
             
@@ -312,7 +319,7 @@
                 
                 robotCard.innerHTML = `
                     <div class="robot-card-image">
-                        <img src="${imageUrl}" alt="${robot.title}">
+                        <img src="${imageUrl}" alt="${robot.title}" onerror="this.src='images/hero-robot.svg'">
                     </div>
                     <div class="robot-card-content">
                         <h3 class="robot-card-title">${robot.title}</h3>
