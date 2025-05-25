@@ -1,52 +1,135 @@
 [
-    {
-        "name": "Spot",
-        "slug": "spot",
-        "manufacturer": "Boston Dynamics",
-        "category": "Quadruped",
-        "description": "Spot is a four-legged robot designed for indoor and outdoor operation. It is a nimble robot that climbs stairs and traverses rough terrain with unprecedented ease, yet is small enough to use indoors. Built to be a rugged and customizable platform, Spot has an industry track record in remote operation and autonomous sensing.\n\nSpot's advanced mobility, dexterity, and intelligence enables automation in difficult, dangerous, or inaccessible environments. Spot comes ready to operate, right out of the box. With its built-in stereo cameras, Spot has 360° vision to avoid obstacles, adapt to changing terrain, and enable remote operation. With a top speed of 1.6 m/s, Spot's mobility ensures your dynamic sensing needs are met.",
-        "specifications": "Weight: 32.5 kg (71.7 lbs)\nRuntime: 90 minutes\nSpeed: 1.6 m/s (3.6 mph)\nPayload: Up to 14 kg (30.9 lbs)\nDimensions: 1.1 m (L) × 0.5 m (W) × 0.84 m (H)\nOperating temperature: -20° to 45° C\nDust & water protection: IP54\nBattery: Lithium-ion",
-        "features": "Self-righting capability\nObstacle avoidance\n360° perception\nAPI for custom development\nAutonomous navigation capabilities\nHands-free remote operation\nTeleoperation from tablet interface",
-        "is_featured": 1
+  {
+    "id": 1,
+    "title": "Tesla Optimus",
+    "slug": "tesla-optimus",
+    "manufacturer": "Tesla, Inc.",
+    "category": "Humanoid",
+    "featured": true,
+    "image": "images/robots/tesla-optimus.jpg",
+    "shortDescription": "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation.",
+    "fullDescription": "Tesla's **Optimus** (also known as the Tesla Bot) is a general-purpose humanoid robot under development by Tesla, Inc. It was unveiled by Elon Musk during Tesla's AI Day event in August 2021. Designed to handle tasks that are repetitive, dangerous, or boring for humans, Optimus aims to revolutionize industries by introducing an affordable, autonomous, and safe labor force. Built with Tesla's expertise in AI, autopilot hardware, and energy systems, the robot represents Tesla's ambition to extend its AI capabilities beyond vehicles.",
+    "specifications": {
+      "Height": "~5 ft 8 in (~1.73 meters)",
+      "Weight": "~125 pounds (~57 kg)",
+      "Payload Capacity": "~20 pounds (~9 kg)",
+      "Maximum Deadlift": "~150 pounds (~68 kg)",
+      "Maximum Speed": "~5 miles per hour (~8 km/h)",
+      "Hands": "Human-like, 5 fingers, precision grip",
+      "Actuators": "28 structural actuators, 11 hand actuators",
+      "Sensors": "Autopilot cameras, FSD hardware, force feedback sensing, tactile sensors",
+      "Power Source": "Battery pack (estimated 2.3 kWh)",
+      "Runtime": "Designed for a full day of work on a single charge",
+      "Processor": "Tesla's Full Self-Driving Computer (FSD Computer)",
+      "Connectivity": "Wi-Fi and LTE modules (expected)"
     },
-    {
-        "name": "Atlas",
-        "slug": "atlas",
-        "manufacturer": "Boston Dynamics",
-        "category": "Humanoid",
-        "description": "Atlas is the world's most dynamic humanoid robot. It uses its whole body to perform various physical tasks, combining its advanced mobility, dexterity, and balance to manipulate objects in its environment and travel across rough terrain.\n\nAtlas is capable of parkour, backflips, and complex gymnastics movements that demonstrate extraordinary agility and coordination. The robot stands approximately 1.5 meters tall and weighs around 89 kg. The robot's advanced control system and state-of-the-art hardware give it the power and balance to demonstrate human-level capabilities. It can use its arms to manipulate objects or push itself off the ground, and its legs to balance, walk, jump, and even do a full backflip.",
-        "specifications": "Height: 1.5 m (4.9 ft)\nWeight: 89 kg (196 lbs)\nPower: Electric\n28 hydraulically-actuated joints\nStereo vision, LIDAR, and depth sensors\nOnboard real-time control computer",
-        "features": "Parkour capabilities\nBackflips and gymnastics\nObject manipulation\nDynamic balance\nContinuous motion planning\nReactive behaviors\nWhole-body dynamic planning and control",
-        "is_featured": 1
+    "capabilities": [
+      "**Mobility:** Walking at a moderate pace, navigating complex environments",
+      "**Dexterity:** Manipulating objects, using tools, picking up delicate or heavy items",
+      "**Perception:** Understanding its environment via cameras and sensors (similar to Tesla's vehicle perception stack)",
+      "**Cognition:** Basic decision-making, simple conversations, and task learning through demonstrations",
+      "**Safety:** Designed with lightweight materials and limited physical power to minimize risk to humans"
+    ],
+    "applications": [
+      "**Industrial:** Assisting in manufacturing, warehouse logistics, and material handling",
+      "**Domestic:** Performing household chores, running errands",
+      "**Commercial:** Serving in retail, restaurants, and customer service roles",
+      "**Healthcare:** Supporting elderly or disabled individuals with daily activities",
+      "**Space and Exploration:** Long-term potential to assist in extraterrestrial missions where human labor is costly and risky"
+    ],
+    "status": "In Development",
+    "releaseDate": "TBD",
+    "price": "Estimated $20,000-$30,000",
+    "tags": ["AI", "Humanoid", "Tesla", "Automation", "Labor", "Electric"],
+    "videos": [
+      {
+        "title": "Tesla Bot AI Day 2022 Demo",
+        "url": "https://www.youtube.com/watch?v=UXHoWNfjJYM",
+        "thumbnail": "images/videos/tesla-optimus-ai-day.jpg"
+      }
+    ],
+    "officialWebsite": "https://www.tesla.com/ai",
+    "lastUpdated": "2025-01-20"
+  },
+  {
+    "id": 2,
+    "title": "Boston Dynamics Atlas",
+    "slug": "boston-dynamics-atlas",
+    "manufacturer": "Boston Dynamics",
+    "category": "Humanoid",
+    "featured": true,
+    "image": "images/robots/atlas.jpg",
+    "shortDescription": "Atlas is an advanced humanoid robot known for its incredible mobility, balance, and parkour capabilities in challenging terrain.",
+    "fullDescription": "Boston Dynamics' **Atlas** is a bipedal humanoid robot designed for search and rescue tasks. Standing 1.5 meters (4.9 ft) tall and weighing 75 kilograms (165 lb), Atlas is one of the most advanced mobile robots ever created. The robot is capable of walking across rough terrain, climbing stairs, and even performing backflips. Atlas uses stereo vision, range sensing and other sensors, along with onboard computers, for navigation and mobility.",
+    "specifications": {
+      "Height": "1.5 meters (4.9 ft)",
+      "Weight": "75 kg (165 lb)",
+      "Power": "Electric with 3.7 kWh lithium-ion battery pack",
+      "Runtime": "Up to 1 hour of mixed locomotion",
+      "Sensors": "LIDAR, stereo cameras, proprioceptive sensors",
+      "Actuators": "28 hydraulic actuators",
+      "Materials": "3D printed parts, titanium and aluminum components",
+      "Operating Temperature": "-20°C to +45°C"
     },
-    {
-        "name": "Pepper",
-        "slug": "pepper",
-        "manufacturer": "SoftBank Robotics",
-        "category": "Humanoid",
-        "description": "Pepper is a semi-humanoid robot designed to be a day-to-day companion. With its ability to recognize faces and basic human emotions, Pepper can engage with people through conversation and a touch screen on its chest. It's designed primarily for human interaction and has been employed in various customer service roles.\n\nStanding at 1.2 meters tall, Pepper has a friendly appearance with large expressive eyes and a high-pitched voice designed to seem unthreatening. The robot is equipped with various sensors and cameras that allow it to perceive its environment and respond appropriately. Pepper's design incorporates a holonomic base with three wheels that allows it to move omnidirectionally. It's intended to be a social companion rather than a utility robot for physical tasks.",
-        "specifications": "Height: 120 cm (3.9 ft)\nWeight: 28 kg (62 lbs)\nAutonomy: 12 hours\n20 degrees of freedom\nOmnidirectional wheels\n3D camera for environmental perception\nTouch sensors on head and hands",
-        "features": "Emotion recognition\nMulti-language support\nTouch sensors\nAutonomous navigation\nVoice recognition and natural language processing\nFacial recognition\nTablet interface for enhanced interaction",
-        "is_featured": 0
+    "capabilities": [
+      "**Dynamic locomotion:** Running, jumping, backflips, and parkour movements",
+      "**Terrain navigation:** Walking on uneven surfaces, climbing stairs, navigating obstacles",
+      "**Balance recovery:** Self-correction when pushed or disturbed",
+      "**Object manipulation:** Picking up and moving objects with precision",
+      "**Autonomous navigation:** Path planning and obstacle avoidance"
+    ],
+    "applications": [
+      "**Search and Rescue:** Operating in dangerous environments too hazardous for humans",
+      "**Military:** Reconnaissance and logistics support in challenging terrain",
+      "**Research:** Advanced robotics research and development platform",
+      "**Entertainment:** Demonstrations and public exhibitions"
+    ],
+    "status": "Research Platform",
+    "releaseDate": "2013 (first version)",
+    "price": "Not commercially available",
+    "tags": ["Boston Dynamics", "Humanoid", "Research", "Military", "Parkour"],
+    "officialWebsite": "https://www.bostondynamics.com/atlas",
+    "lastUpdated": "2025-01-20"
+  },
+  {
+    "id": 3,
+    "title": "iRobot Roomba j7+",
+    "slug": "irobot-roomba-j7-plus",
+    "manufacturer": "iRobot",
+    "category": "Consumer",
+    "featured": true,
+    "image": "images/robots/roomba-j7.jpg",
+    "shortDescription": "The Roomba j7+ is an intelligent robotic vacuum with advanced obstacle avoidance and automatic dirt disposal capabilities.",
+    "fullDescription": "The **iRobot Roomba j7+** represents the pinnacle of robotic vacuum technology, featuring advanced AI-powered navigation and the revolutionary Clean Base® Automatic Dirt Disposal. This smart vacuum can identify and avoid obstacles like pet waste, cords, and shoes, making it safe to run even when you're not home. With PrecisionVision Navigation and iRobot's advanced mapping technology, the j7+ learns your home's layout and cleaning preferences.",
+    "specifications": {
+      "Dimensions": "13.34 x 13.34 x 3.63 inches",
+      "Weight": "7.44 pounds",
+      "Battery": "Lithium-ion, 1800 mAh",
+      "Runtime": "Up to 75 minutes",
+      "Charging Time": "3 hours",
+      "Dustbin Capacity": "0.4 liters",
+      "Clean Base Capacity": "60 days of dirt and debris",
+      "Filtration": "High-Efficiency Filter",
+      "Connectivity": "Wi-Fi, Bluetooth"
     },
-    {
-        "name": "Tesla Optimus",
-        "slug": "tesla-optimus",
-        "manufacturer": "Tesla, Inc.",
-        "category": "Humanoid",
-        "description": "Tesla Optimus, also known as Tesla Bot, is a humanoid robot designed by Tesla, Inc. The robot was first announced in August 2021 during Tesla's AI Day event. Optimus is intended to be friendly, navigate through a world built for humans, and eliminate dangerous, repetitive, and boring tasks.\n\nOptimus is designed with human-like proportions and movements, standing approximately 5'8\" tall and weighing around 125 pounds. It uses the same AI software and hardware that powers Tesla's advanced driver-assistance system, Autopilot. The robot is intended for tasks such as grocery shopping, household chores, and manufacturing work in Tesla factories.",
-        "specifications": "Height: 5'8\" (173 cm)\nWeight: Approximately 125 lbs (57 kg)\nSpeed: Up to 5 mph (8 km/h)\nLoad capacity: 45 lbs (20 kg)\nPower: Electric (Tesla battery technology)\nAI: Neural networks similar to Tesla Autopilot\nVision: 8 cameras and advanced computer vision",
-        "features": "Human-like movement and articulation\nAdvanced AI for understanding natural voice commands\nSafety features to prevent harm to humans\nFace recognition\nLearning capabilities\nWireless connectivity\nTesla FSD (Full Self-Driving) computer adaptation",
-        "is_featured": 1
-    },
-    {
-        "name": "Roomba j7+",
-        "slug": "roomba-j7-plus",
-        "manufacturer": "iRobot",
-        "category": "Consumer",
-        "description": "The Roomba j7+ is an advanced robotic vacuum cleaner that takes home automation to the next level. With its PrecisionVision Navigation, it can identify and avoid obstacles like cords and pet waste, making it smarter about how it cleans your home.\n\nThis model includes the Clean Base Automatic Dirt Disposal system, which allows the robot to empty itself for up to 60 days, saving you from the hassle of frequent emptying. The Roomba j7+ learns your cleaning preferences and offers customized cleaning schedules based on your habits and routines. It even suggests extra cleanings during high pollen seasons or pet shedding periods.",
-        "specifications": "Dimensions: 13.3\" × 13.3\" × 3.4\"\nWeight: 7.49 lbs\nBattery: Lithium Ion\nRuntime: Up to 75 minutes\nCharging Time: 3 hours\nFilter Type: High-Efficiency\nDirt Capacity: 400ml\nControl: Voice, App, or Manual",
-        "features": "PrecisionVision Navigation\nClean Base Automatic Dirt Disposal\nDual Multi-Surface Rubber Brushes\niRobot OS intelligence\n10× Power Lifting Suction\nDirt Detect Technology\nSmart Mapping\nImprint Link Technology for coordination with Braava jet m6",
-        "is_featured": 0
-    }
+    "capabilities": [
+      "**Smart Mapping:** Creates detailed maps of your home for efficient cleaning",
+      "**Obstacle Avoidance:** AI-powered object recognition prevents collisions",
+      "**Automatic Dirt Disposal:** Empties itself for up to 60 days",
+      "**App Control:** Schedule and control via iRobot Home app",
+      "**Voice Commands:** Compatible with Alexa, Google Assistant, Siri"
+    ],
+    "applications": [
+      "**Home Cleaning:** Daily floor maintenance for homes and apartments",
+      "**Pet Hair Removal:** Specialized brushes for pet owners",
+      "**Allergen Reduction:** HEPA filtration for improved air quality",
+      "**Convenience:** Hands-free operation for busy households"
+    ],
+    "status": "Available",
+    "releaseDate": "September 2021",
+    "price": "$849.99 USD",
+    "tags": ["Consumer", "Vacuum", "AI", "Smart Home", "Pet-friendly"],
+    "officialWebsite": "https://www.irobot.com/roomba/j-series",
+    "lastUpdated": "2025-01-20"
+  }
 ]
