@@ -7,39 +7,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/logo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Fasthand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo-container">
-                <!-- SVG Logo -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="180" height="60" class="logo">
-                  <!-- Definition of gradient and glow -->
-                  <defs>
-                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#0cebeb"/>
-                      <stop offset="100%" stop-color="#20e3b2"/>
-                    </linearGradient>
-                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                      <feGaussianBlur stdDeviation="2" result="blur"/>
-                      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-                    </filter>
-                  </defs>
-                  
-                  <!-- Path for the 'T' element -->
-                  <path d="M30.96965,130.265109c4.504842-2.783085,98.787866-5.009554,85.997348-5.009554-117.352536,2.860933-40.72106,19.243294-40.493897,14.6112" transform="translate(4.592093-3.339704)" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" filter="url(#glow)"/>
-                  
-                  <!-- Text elements -->
-                  <text dx="0" dy="0" font-family="Arial, sans-serif" font-size="15" font-weight="400" font-style="italic" transform="matrix(2.322194-.031029 0.010676 0.798958 74.435681 137.109235)" fill="url(#logoGradient)" filter="url(#glow)">
-                    <tspan y="0" font-weight="400">edouaR</tspan>
-                  </text>
-                  
-                  <text x="110" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle" fill="url(#logoGradient)" filter="url(#glow)">ROBOTICS</text>
-                </svg>
+                <img src="images/logo.svg" alt="TedouaR Logo" class="logo">
             </a>
-            
             <nav class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="encyclopedia.html">Encyclopedia</a>
@@ -71,7 +47,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero-robot.svg" alt="Robot Illustration">
+                <img src="images/hero-robot.png" alt="Robot Illustration">
             </div>
         </div>
     </section>
@@ -141,24 +117,6 @@
         </div>
     </div>
 
-    <!-- AI Assistant Chat Interface (Hidden by default) -->
-    <div class="ai-chat-container" id="ai-chat-container">
-        <div class="ai-chat-header">
-            <div class="ai-chat-title">Robot Assistant</div>
-            <div class="ai-chat-close" id="ai-chat-close"><i class="fas fa-times"></i></div>
-        </div>
-        <div class="ai-chat-messages" id="ai-chat-messages">
-            <div class="ai-message">
-                <div class="ai-avatar"><i class="fas fa-robot"></i></div>
-                <div class="ai-bubble">Hello! I'm your robotics guide. How can I help you explore the world of robots today?</div>
-            </div>
-        </div>
-        <div class="ai-chat-input">
-            <input type="text" id="ai-input" placeholder="Ask me about robots...">
-            <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -209,7 +167,7 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/ai-assistant.js"></script>
+    <script src="js/auth.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu handling
@@ -221,6 +179,15 @@
                 mobileMenuButton.addEventListener('click', function() {
                     navLinks.classList.toggle('mobile-active');
                     authButtons.classList.toggle('mobile-active');
+                });
+            }
+            
+            // AI Assistant button
+            const aiButton = document.getElementById('ai-button');
+            if (aiButton) {
+                aiButton.addEventListener('click', function() {
+                    // Simple redirection to /contact.html with query parameter
+                    window.location.href = 'contact.html?assistant=open';
                 });
             }
             
@@ -291,22 +258,6 @@
                     manufacturer: "Tesla, Inc.",
                     image: "images/robots/tesla-optimus.jpg",
                     description: "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation."
-                },
-                {
-                    title: "Boston Dynamics Atlas",
-                    slug: "boston-dynamics-atlas",
-                    category: "Humanoid",
-                    manufacturer: "Boston Dynamics",
-                    image: "images/robots/atlas.jpg",
-                    description: "Atlas is the world's most dynamic humanoid robot, designed to navigate complex terrain and perform athletic movements."
-                },
-                {
-                    title: "Universal Robots UR10",
-                    slug: "universal-robots-ur10",
-                    category: "Industrial",
-                    manufacturer: "Universal Robots",
-                    image: "images/robots/ur10.jpg",
-                    description: "The UR10 is a collaborative industrial robot arm designed for larger payload applications and extended reach."
                 }
             ];
             
@@ -319,7 +270,7 @@
                 
                 robotCard.innerHTML = `
                     <div class="robot-card-image">
-                        <img src="${imageUrl}" alt="${robot.title}" onerror="this.src='images/hero-robot.svg'">
+                        <img src="${imageUrl}" alt="${robot.title}">
                     </div>
                     <div class="robot-card-content">
                         <h3 class="robot-card-title">${robot.title}</h3>
