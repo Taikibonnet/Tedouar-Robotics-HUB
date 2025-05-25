@@ -27,7 +27,7 @@ class AuthSystem {
 
     init() {
         // Check if user is already logged in
-        const savedUser = localStorage.getItem('tedouar_auth_user');
+        const savedUser = localStorage.getItem('currentUser');
         if (savedUser) {
             this.currentUser = JSON.parse(savedUser);
             this.updateAuthUI();
@@ -55,6 +55,18 @@ class AuthSystem {
             if (e.target.classList.contains('logout-btn') || e.target.closest('.logout-btn')) {
                 e.preventDefault();
                 this.logout();
+            }
+        });
+
+        // Admin panel click handler
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('admin-panel-btn') || e.target.closest('.admin-panel-btn')) {
+                e.preventDefault();
+                if (this.isAdmin()) {
+                    window.location.href = 'admin.html';
+                } else {
+                    this.showError('Access denied. Admin privileges required.');
+                }
             }
         });
     }
@@ -117,7 +129,8 @@ class AuthSystem {
                 avatar: user.avatar
             };
             
-            // Save to localStorage
+            // Save to localStorage with both keys for compatibility
+            localStorage.setItem('currentUser', JSON.stringify(this.currentUser));
             localStorage.setItem('tedouar_auth_user', JSON.stringify(this.currentUser));
             
             // Update UI
@@ -164,7 +177,7 @@ class AuthSystem {
                             <div class="user-dropdown">
                                 <div class="dropdown-content">
                                     ${this.currentUser.role === 'admin' ? 
-                                        '<a href="admin.html" class="dropdown-item"><i class="fas fa-cog"></i> Admin Panel</a>' : 
+                                        '<a href="admin.html" class="dropdown-item admin-panel-btn"><i class="fas fa-cog"></i> Admin Panel</a>' : 
                                         ''
                                     }
                                     <a href="#" class="dropdown-item"><i class="fas fa-user"></i> Profile</a>
@@ -175,6 +188,10 @@ class AuthSystem {
                             </div>
                         </div>
                     </div>
+                    ${this.currentUser.role === 'admin' ? 
+                        '<a href="admin.html" class="btn btn-primary admin-panel-btn" style="margin-left: 10px;"><i class="fas fa-tools"></i> Admin</a>' : 
+                        ''
+                    }
                 `;
             }
         });
@@ -200,7 +217,7 @@ class AuthSystem {
                 cursor: pointer;
                 padding: 0.5rem 1rem;
                 border-radius: 50px;
-                border: 1px solid rgba(0, 255, 255, 0.3);
+                border: 1px solid rgba(32, 227, 178, 0.3);
                 background: rgba(0, 0, 0, 0.3);
                 backdrop-filter: blur(10px);
                 transition: all 0.3s ease;
@@ -208,7 +225,7 @@ class AuthSystem {
 
             .user-menu:hover {
                 border-color: var(--primary-color);
-                box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+                box-shadow: 0 0 20px rgba(32, 227, 178, 0.3);
                 transform: translateY(-2px);
             }
 
@@ -256,7 +273,7 @@ class AuthSystem {
             .dropdown-content {
                 background: rgba(17, 17, 17, 0.95);
                 backdrop-filter: blur(20px);
-                border: 1px solid var(--border-color);
+                border: 1px solid rgba(32, 227, 178, 0.3);
                 border-radius: 10px;
                 min-width: 200px;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -275,7 +292,7 @@ class AuthSystem {
             }
 
             .dropdown-item:hover {
-                background: rgba(0, 255, 255, 0.1);
+                background: rgba(32, 227, 178, 0.1);
                 color: var(--primary-color);
             }
 
@@ -286,13 +303,18 @@ class AuthSystem {
 
             .dropdown-divider {
                 height: 1px;
-                background: var(--border-color);
+                background: rgba(32, 227, 178, 0.3);
                 margin: 0.5rem 0;
             }
 
             .logout-btn:hover {
                 background: rgba(255, 68, 68, 0.1) !important;
                 color: #ff4444 !important;
+            }
+
+            .admin-panel-btn:hover {
+                background: rgba(32, 227, 178, 0.2) !important;
+                color: var(--primary-color) !important;
             }
 
             @media (max-width: 768px) {
@@ -344,6 +366,7 @@ class AuthSystem {
 
     logout() {
         this.currentUser = null;
+        localStorage.removeItem('currentUser');
         localStorage.removeItem('tedouar_auth_user');
         
         // Reset auth buttons
@@ -410,14 +433,14 @@ class AuthSystem {
 
                 .auth-alert-success {
                     background: rgba(0, 255, 136, 0.2);
-                    border-color: var(--success-color);
-                    color: var(--success-color);
+                    border-color: #00ff88;
+                    color: #00ff88;
                 }
 
                 .auth-alert-error {
                     background: rgba(255, 68, 68, 0.2);
-                    border-color: var(--danger-color);
-                    color: var(--danger-color);
+                    border-color: #ff4444;
+                    color: #ff4444;
                 }
 
                 @keyframes slideInRight {
