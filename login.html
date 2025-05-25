@@ -189,6 +189,29 @@
             text-decoration: underline;
         }
 
+        .demo-credentials {
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .demo-credentials h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .demo-credentials p {
+            margin: 0.25rem 0;
+            font-size: 0.9rem;
+        }
+
+        .demo-credentials strong {
+            color: var(--secondary-color);
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -267,6 +290,14 @@
             <div class="container login-container">
                 <div class="login-form">
                     <h2 class="form-title">Log In</h2>
+                    
+                    <!-- Demo Credentials Info -->
+                    <div class="demo-credentials">
+                        <h4><i class="fas fa-info-circle"></i> Demo Accounts</h4>
+                        <p><strong>Admin:</strong> tedouar.robotics@gmail.com | admin123</p>
+                        <p><strong>User:</strong> user@example.com | user123</p>
+                    </div>
+                    
                     <form id="loginForm">
                         <div class="form-group">
                             <label for="email">Email Address</label>
@@ -372,27 +403,6 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/ai-assistant.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const loginForm = document.getElementById('loginForm');
-            
-            if (loginForm) {
-                loginForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const email = document.getElementById('email').value;
-                    const password = document.getElementById('password').value;
-                    
-                    // Here you would typically send the data to a server for authentication
-                    // For now, we'll just show a success message and redirect
-                    alert(`Welcome back! Logging you in...`);
-                    
-                    // Redirect to home page
-                    window.location.href = 'index.html';
-                });
-            }
-        });
-    </script>
+    <script src="js/auth.js"></script>
 </body>
 </html>
