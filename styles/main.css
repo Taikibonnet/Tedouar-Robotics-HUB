@@ -91,27 +91,11 @@ header::after {
     position: relative;
 }
 
-/* Enhanced Logo */
+/* Enhanced Logo - REMOVED rotating border */
 .logo-container {
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.logo-container::before {
-    content: '';
-    position: absolute;
-    inset: -5px;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg, var(--primary-color), var(--secondary-color), var(--accent-color), var(--primary-color));
-    animation: logo-rotate 4s linear infinite;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-@keyframes logo-rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 .logo {
@@ -321,30 +305,14 @@ header::after {
     justify-content: center;
 }
 
-.hero-image::before {
-    content: '';
-    position: absolute;
-    inset: -20px;
-    background: conic-gradient(from 0deg, var(--primary-color), var(--secondary-color), var(--accent-color), var(--primary-color));
-    border-radius: 50%;
-    animation: rotate-ring 8s linear infinite;
-    z-index: -1;
-    opacity: 0.3;
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
-}
-
-@keyframes rotate-ring {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Sections */
@@ -590,206 +558,15 @@ section {
     border: none;
 }
 
-.ai-button::before {
-    content: '';
-    position: absolute;
-    inset: -5px;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg, var(--primary-color), var(--accent-color), var(--secondary-color), var(--primary-color));
-    animation: ai-rotate 6s linear infinite;
-    z-index: -1;
-}
-
 @keyframes ai-float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
-}
-
-@keyframes ai-rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 .ai-icon {
     font-size: 1.5rem;
     color: var(--bg-color);
     z-index: 2;
-}
-
-/* AI Chat Interface */
-.ai-chat-container {
-    position: fixed;
-    bottom: 120px;
-    right: 30px;
-    width: 350px;
-    height: 500px;
-    background: rgba(26, 26, 46, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 255, 255, 0.3);
-    border-radius: 20px;
-    box-shadow: var(--card-glow);
-    display: flex;
-    flex-direction: column;
-    transform: translateY(100px);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-}
-
-.ai-chat-container.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-.ai-chat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-    background: rgba(0, 255, 255, 0.1);
-}
-
-.ai-chat-title {
-    font-family: 'Orbitron', monospace;
-    color: var(--primary-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.ai-chat-close {
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.ai-chat-close:hover {
-    background: rgba(0, 255, 255, 0.2);
-    transform: scale(1.1);
-}
-
-.ai-chat-messages {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.ai-message, .user-message {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    animation: message-appear 0.3s ease;
-}
-
-.user-message {
-    flex-direction: row-reverse;
-}
-
-@keyframes message-appear {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.ai-avatar, .user-avatar {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    flex-shrink: 0;
-}
-
-.ai-avatar {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    color: var(--bg-color);
-}
-
-.user-avatar {
-    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
-    color: var(--bg-color);
-}
-
-.ai-bubble, .user-bubble {
-    max-width: 250px;
-    padding: 12px 16px;
-    border-radius: 18px;
-    line-height: 1.4;
-    font-size: 0.9rem;
-}
-
-.ai-bubble {
-    background: rgba(0, 255, 255, 0.1);
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    color: var(--text-color);
-}
-
-.user-bubble {
-    background: rgba(255, 0, 128, 0.1);
-    border: 1px solid rgba(255, 0, 128, 0.2);
-    color: var(--text-color);
-}
-
-.ai-chat-input {
-    display: flex;
-    padding: 20px;
-    gap: 10px;
-    border-top: 1px solid rgba(0, 255, 255, 0.2);
-}
-
-.ai-chat-input input {
-    flex: 1;
-    background: rgba(0, 255, 255, 0.1);
-    border: 1px solid rgba(0, 255, 255, 0.3);
-    border-radius: 25px;
-    padding: 12px 20px;
-    color: var(--text-color);
-    font-size: 0.9rem;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.ai-chat-input input:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-}
-
-.ai-chat-input input::placeholder {
-    color: rgba(224, 224, 255, 0.5);
-}
-
-.ai-chat-input button {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    border: none;
-    color: var(--bg-color);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.ai-chat-input button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
 }
 
 /* Footer Enhancement */
@@ -897,11 +674,6 @@ footer::before {
     .hero-image {
         order: -1;
     }
-    
-    .ai-chat-container {
-        width: 320px;
-        right: 20px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -936,12 +708,6 @@ footer::before {
         bottom: 20px;
         right: 20px;
     }
-    
-    .ai-chat-container {
-        width: calc(100vw - 40px);
-        right: 20px;
-        bottom: 100px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -956,9 +722,5 @@ footer::before {
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
-    }
-    
-    .ai-chat-container {
-        height: 400px;
     }
 }
