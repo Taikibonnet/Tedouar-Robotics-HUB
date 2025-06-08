@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eS9JMGOVkj81" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eS9JMGOVkj81" viewBox="0 0 220 100" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
   <!-- Definition of gradient and glow from TGen robotics style -->
   <defs>
     <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -14,12 +14,13 @@
       @import url("https://fonts.googleapis.com/css2?family=Fasthand&amp;display=swap");
     </style>
   </defs>
-  <!-- Original path with new colors -->
-  <path d="M30.96965,130.265109c4.504842-2.783085,98.787866-5.009554,85.997348-5.009554-117.352536,2.860933-40.72106,19.243294-40.493897,14.6112" transform="translate(4.592093-3.339704)" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" filter="url(#glow)"/>
   
-  <!-- Original text with preserved cursive style -->
-  <text dx="0" dy="0" font-family="Fasthand, cursive" font-size="15" font-weight="400" font-style="italic" transform="matrix(2.322194-.031029 0.010676 0.798958 74.435681 137.109235)" fill="url(#logoGradient)" filter="url(#glow)"><tspan y="0" font-weight="400">edouaR</tspan></text>
+  <!-- Repositioned and scaled path to start from left -->
+  <path d="M10,35c4.504842-2.783085,98.787866-5.009554,85.997348-5.009554-117.352536,2.860933-40.72106,19.243294-40.493897,14.6112" transform="scale(1.5,1.2)" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" filter="url(#glow)"/>
   
-  <!-- Adjusted ROBOTICS text: moved left and closer to the logo -->
-  <text x="110" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle" fill="url(#logoGradient)" filter="url(#glow)">ROBOTICS</text>
+  <!-- Repositioned and scaled TedouaR text to be more prominent -->
+  <text dx="0" dy="0" font-family="Fasthand, cursive" font-size="18" font-weight="400" font-style="italic" transform="matrix(2.8 0 0 1.2 15 50)" fill="url(#logoGradient)" filter="url(#glow)"><tspan y="0" font-weight="400">TedouaR</tspan></text>
+  
+  <!-- Repositioned ROBOTICS text to be centered under the logo -->
+  <text x="110" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3" text-anchor="middle" fill="url(#logoGradient)" filter="url(#glow)">ROBOTICS</text>
 </svg>
