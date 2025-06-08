@@ -6,7 +6,7 @@
     "manufacturer": "Tesla, Inc.",
     "category": "Humanoid",
     "featured": true,
-    "image": "images/robots/tesla-optimus.jpg",
+    "image": "images/robots/tesla optimus/tesla-optimuis-main.jpg",
     "description": "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation.",
     "fullDescription": "Tesla's Optimus (also known as the Tesla Bot) is a general-purpose humanoid robot under development by Tesla, Inc. It was unveiled by Elon Musk during Tesla's AI Day event in August 2021. Designed to handle tasks that are repetitive, dangerous, or boring for humans, Optimus aims to revolutionize industries by introducing an affordable, autonomous, and safe labor force. Built with Tesla's expertise in AI, autopilot hardware, and energy systems, the robot represents Tesla's ambition to extend its AI capabilities beyond vehicles.",
     "specifications": {
@@ -50,9 +50,9 @@
       }
     ],
     "images": [
-      "images/robots/tesla-optimus.jpg",
-      "images/robots/tesla-optimus-cooking.jpg",
-      "images/robots/tesla-optimus-standing.jpg"
+      "images/robots/tesla optimus/tesla-optimuis-main.jpg",
+      "images/robots/tesla optimus/tesla-optimus-cooking.webp",
+      "images/robots/tesla optimus/tesla-optimus-standing.png"
     ],
     "sources": [
       {
