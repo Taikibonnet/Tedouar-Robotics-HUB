@@ -12,8 +12,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 100px 20px 50px;
-            background: radial-gradient(circle at center, #1a1a1a 0%, #121212 100%);
+            padding: 120px 20px 50px;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 255, 255, 0.05) 50%, transparent 100%);
             position: relative;
             overflow: hidden;
         }
@@ -25,32 +25,65 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(12, 235, 235, 0.1), rgba(32, 227, 178, 0.1));
-            opacity: 0.1;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="circuit" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10 0v5M0 10h5M10 15v5M15 10h5M10 10m-2 0a2 2 0 1 1 4 0a2 2 0 1 1 -4 0" stroke="rgba(0,255,255,0.1)" stroke-width="0.5" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23circuit)"/></svg>') repeat;
+            animation: circuit-flow 10s linear infinite;
+            opacity: 0.3;
             z-index: 0;
         }
         
         .login-form {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
             padding: 40px;
             width: 100%;
-            max-width: 400px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(32, 227, 178, 0.2);
+            max-width: 450px;
+            box-shadow: var(--card-glow);
+            border: 1px solid rgba(0, 255, 255, 0.2);
             position: relative;
             z-index: 1;
         }
         
         .form-title {
+            font-family: 'Orbitron', monospace;
             font-size: 2.5rem;
             color: var(--primary-color);
             text-align: center;
             margin-bottom: 30px;
-            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px var(--primary-color);
+        }
+        
+        .admin-info {
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .admin-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: 'Orbitron', monospace;
+        }
+        
+        .admin-info p {
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        
+        .credentials {
+            background: rgba(10, 10, 15, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: var(--secondary-color);
         }
         
         .form-group {
@@ -61,57 +94,76 @@
             display: block;
             margin-bottom: 8px;
             color: var(--primary-color);
-            font-weight: 500;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
         }
         
         .form-control {
             width: 100%;
-            padding: 15px;
-            border-radius: 5px;
-            border: 1px solid rgba(32, 227, 178, 0.3);
-            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            background: rgba(10, 10, 15, 0.8);
             color: var(--text-color);
             font-size: 1rem;
             transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
         }
         
         .form-control:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 10px rgba(32, 227, 178, 0.3);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            background: rgba(10, 10, 15, 0.9);
+        }
+        
+        .form-control::placeholder {
+            color: rgba(224, 224, 255, 0.5);
         }
         
         .submit-btn {
-            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             color: var(--bg-color);
             padding: 15px 30px;
             border: none;
-            border-radius: 50px;
+            border-radius: 25px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
             margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(32, 227, 178, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.5);
         }
         
         .signup-link {
             text-align: center;
             margin-top: 20px;
+            color: var(--text-color);
+            opacity: 0.8;
         }
         
         .signup-link a {
             color: var(--primary-color);
             text-decoration: none;
+            font-weight: 600;
         }
         
         .signup-link a:hover {
-            text-decoration: underline;
+            text-shadow: 0 0 10px var(--primary-color);
+        }
+
+        @keyframes circuit-flow {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(20px, 20px); }
         }
     </style>
 </head>
@@ -120,23 +172,7 @@
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="180" height="60" class="logo">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#0cebeb"/>
-                            <stop offset="100%" stop-color="#20e3b2"/>
-                        </linearGradient>
-                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                            <feGaussianBlur stdDeviation="2" result="blur"/>
-                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-                        </filter>
-                    </defs>
-                    <path d="M30.96965,130.265109c4.504842-2.783085,98.787866-5.009554,85.997348-5.009554-117.352536,2.860933-40.72106,19.243294-40.493897,14.6112" transform="translate(4.592093-3.339704)" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" filter="url(#glow)"/>
-                    <text dx="0" dy="0" font-family="Arial, sans-serif" font-size="15" font-weight="400" font-style="italic" transform="matrix(2.322194-.031029 0.010676 0.798958 74.435681 137.109235)" fill="url(#logoGradient)" filter="url(#glow)">
-                        <tspan y="0" font-weight="400">edouaR</tspan>
-                    </text>
-                    <text x="110" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle" fill="url(#logoGradient)" filter="url(#glow)">ROBOTICS</text>
-                </svg>
+                <img src="images/logo.svg" alt="TedouaR Logo" class="logo">
             </a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
@@ -157,22 +193,33 @@
     <!-- Login Form -->
     <section class="login-container">
         <form class="login-form" id="loginForm">
-            <h2 class="form-title">Welcome Back</h2>
+            <h2 class="form-title">Admin Access</h2>
+            
+            <div class="admin-info">
+                <h3><i class="fas fa-user-shield"></i> Demo Admin Login</h3>
+                <p>Use these credentials to access the admin panel:</p>
+                <div class="credentials">
+                    Email: admin@tedouar.com<br>
+                    Password: admin123
+                </div>
+            </div>
             
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="form-control" required>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
             </div>
             
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="form-control" required>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
             </div>
             
-            <button type="submit" class="submit-btn">Log In</button>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-sign-in-alt"></i> Access Admin Panel
+            </button>
             
             <div class="signup-link">
-                Don't have an account? <a href="signup.html">Sign Up</a>
+                Need an account? <a href="signup.html">Sign Up</a>
             </div>
         </form>
     </section>
@@ -186,24 +233,36 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
-            // Simple login simulation
-            if (email === 'tedouar.robotics@gmail.com' && password === 'admin123') {
-                // Store user data
+            // Admin login credentials
+            if (email === 'admin@tedouar.com' && password === 'admin123') {
+                // Store admin credentials
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userRole', 'admin');
                 localStorage.setItem('currentUser', JSON.stringify({
                     email: email,
                     name: 'Admin User',
                     role: 'admin'
                 }));
-                localStorage.setItem('tedouar_auth_user', JSON.stringify({
-                    email: email,
-                    name: 'Admin User',
-                    role: 'admin'
-                }));
                 
-                alert('Login successful!');
-                window.location.href = 'index.html';
+                // Check if redirect parameter exists
+                const urlParams = new URLSearchParams(window.location.search);
+                const redirectTo = urlParams.get('redirect') || 'admin.html';
+                
+                // Show success message
+                alert('🎉 Admin login successful! Redirecting to admin panel...');
+                
+                // Redirect to admin panel or requested page
+                window.location.href = redirectTo;
             } else {
-                alert('Invalid credentials. Try: tedouar.robotics@gmail.com / admin123');
+                alert('❌ Invalid credentials!\n\nUse:\nEmail: admin@tedouar.com\nPassword: admin123');
+            }
+        });
+
+        // Auto-fill for demo purposes
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if already logged in
+            if (localStorage.getItem('isLoggedIn') === 'true' && localStorage.getItem('userRole') === 'admin') {
+                window.location.href = 'admin.html';
             }
         });
     </script>
