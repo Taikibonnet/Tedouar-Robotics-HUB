@@ -65,7 +65,7 @@ header {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 header::after {
@@ -91,7 +91,7 @@ header::after {
     position: relative;
 }
 
-/* Enhanced Logo - REMOVED rotating border */
+/* Enhanced Logo - BIGGER SIZE */
 .logo-container {
     position: relative;
     display: flex;
@@ -99,8 +99,9 @@ header::after {
 }
 
 .logo {
-    height: 50px;
+    height: 80px;
     width: auto;
+    max-width: 200px;
 }
 
 /* Futuristic Navigation */
@@ -234,7 +235,7 @@ header::after {
     position: relative;
     overflow: hidden;
     background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 255, 255, 0.05) 50%, transparent 100%);
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .hero::before {
@@ -674,6 +675,10 @@ footer::before {
     .hero-image {
         order: -1;
     }
+    
+    .logo {
+        height: 70px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -708,6 +713,14 @@ footer::before {
         bottom: 20px;
         right: 20px;
     }
+    
+    .logo {
+        height: 60px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -722,5 +735,9 @@ footer::before {
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+    
+    .logo {
+        height: 50px;
     }
 }
