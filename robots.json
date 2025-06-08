@@ -17,27 +17,58 @@
       "Maximum Speed": "~5 miles per hour (~8 km/h)",
       "Hands": "Human-like, 5 fingers, precision grip",
       "Actuators": "28 structural actuators, 11 hand actuators",
-      "Sensors": "Autopilot cameras, FSD hardware, force feedback sensing, tactile sensors",
+      "Sensors": "Autopilot cameras, FSD (Full Self-Driving) hardware, force feedback sensing, tactile sensors",
       "Power Source": "Battery pack (estimated 2.3 kWh)",
-      "Runtime": "Designed for a full day of work on a single charge",
+      "Runtime": "Designed for a full day of work on a single charge (claimed)",
       "Processor": "Tesla's Full Self-Driving Computer (FSD Computer)",
       "Connectivity": "Wi-Fi and LTE modules (expected)"
     },
     "capabilities": [
       "Mobility: Walking at a moderate pace, navigating complex environments",
       "Dexterity: Manipulating objects, using tools, picking up delicate or heavy items",
-      "Perception: Understanding environment via cameras and sensors",
-      "Cognition: Basic decision-making, simple conversations, task learning",
-      "Safety: Designed with lightweight materials and limited physical power"
+      "Perception: Understanding its environment via cameras and sensors (similar to Tesla's vehicle perception stack)",
+      "Cognition: Basic decision-making, simple conversations, and task learning through demonstrations",
+      "Safety: Designed with lightweight materials and limited physical power to minimize risk to humans"
     ],
     "applications": [
-      "Industrial: Manufacturing, warehouse logistics, material handling",
-      "Domestic: Household chores, running errands",
-      "Commercial: Retail, restaurants, customer service roles",
-      "Healthcare: Supporting elderly or disabled individuals",
-      "Space and Exploration: Extraterrestrial missions assistance"
+      "Industrial: Assisting in manufacturing, warehouse logistics, and material handling",
+      "Domestic: Performing household chores, running errands",
+      "Commercial: Serving in retail, restaurants, and customer service roles",
+      "Healthcare: Supporting elderly or disabled individuals with daily activities",
+      "Space and Exploration: Long-term potential to assist in extraterrestrial missions where human labor is costly and risky"
     ],
-    "tags": ["AI", "Humanoid", "Tesla", "Automation", "General Purpose"],
+    "videos": [
+      {
+        "title": "Tesla Optimus - Official Demonstration",
+        "url": "https://www.youtube.com/watch?v=cpraXaw7dyc",
+        "embedUrl": "https://www.youtube.com/embed/cpraXaw7dyc"
+      },
+      {
+        "title": "Tesla Optimus - Latest Updates",
+        "url": "https://www.youtube.com/watch?v=DrNcXgoFv20",
+        "embedUrl": "https://www.youtube.com/embed/DrNcXgoFv20"
+      }
+    ],
+    "images": [
+      "images/robots/tesla-optimus.jpg",
+      "images/robots/tesla-optimus-cooking.jpg",
+      "images/robots/tesla-optimus-standing.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia - Tesla Bot",
+        "url": "https://es.wikipedia.org/wiki/Tesla_Bot#/media/Archivo:Tesla-optimus-bot-gen-2-scaled_(cropped).jpg"
+      },
+      {
+        "title": "Notebookcheck - Tesla Optimus Release",
+        "url": "https://www.notebookcheck.org/Elon-Musk-Tesla-liberara-5-000-robots-Optimus-en-2025.984475.0.html"
+      },
+      {
+        "title": "Xpert Digital - Optimus Roboticus",
+        "url": "https://xpert.digital/es/optimus-roboticus-humaniforme/"
+      }
+    ],
+    "tags": ["AI", "Humanoid", "Tesla", "Automation", "General Purpose", "Labor", "Manufacturing"],
     "releaseYear": "2021",
     "status": "In Development"
   },
