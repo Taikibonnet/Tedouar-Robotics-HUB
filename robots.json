@@ -73,6 +73,66 @@
     "status": "In Development"
   },
   {
+    "id": "neo-gamma",
+    "title": "NEO Gamma",
+    "slug": "neo-gamma",
+    "manufacturer": "1X Technologies",
+    "category": "Humanoid",
+    "featured": true,
+    "image": "images/robots/neo gamma/neo-gamma-main.jpg",
+    "description": "NEO Gamma is a humanoid robot designed for home assistance, offering tasks like cleaning and companionship with advanced AI capabilities.",
+    "fullDescription": "NEO Gamma is a next-generation humanoid robot developed by 1X Technologies, specifically designed for home environments. Standing approximately 1.65 meters tall and weighing around 30 kilograms, NEO Gamma integrates advanced AI to perform household tasks, engage in natural conversations, and provide companionship. Its design emphasizes safety and adaptability, featuring a soft knit suit and tendon-driven motion system for smooth, human-like movements.",
+    "specifications": {
+      "Height": "Approximately 1.65 meters (5.4 feet)",
+      "Weight": "Around 30 kilograms (66 pounds)",
+      "Mobility": "Natural human-like gait with the ability to squat, sit, and walk",
+      "Hands": "Five-fingered hands capable of delicate object manipulation",
+      "Sensors": "Visual sensors for object recognition and navigation",
+      "Audio System": "Four microphones with beamforming and echo cancellation; three speakers for voice interaction and audio playback",
+      "AI Capabilities": "Proprietary language model for natural conversation; reinforcement learning-based motion control",
+      "Safety Features": "Soft knit suit and tendon-driven joints for safe interaction in home environments",
+      "Noise Level": "Operates quietly, comparable to the noise level of a refrigerator"
+    },
+    "capabilities": [
+      "Household Chores: Performs tidying, deep cleaning, and home management tasks",
+      "Natural Conversation: Engages in conversations and provides companionship using advanced language models",
+      "Adaptive Learning: Learns and adapts to new tasks through reinforcement learning",
+      "Object Manipulation: Delicate handling of household items with five-fingered hands",
+      "Quiet Operation: Minimal noise during operation for comfortable home environment"
+    ],
+    "applications": [
+      "Home Assistance: Cleaning, organizing, and managing household tasks",
+      "Companionship: Engaging in conversations, providing emotional support, and tutoring",
+      "Smart Home Integration: Potential to integrate with other smart home devices for enhanced automation",
+      "Elderly Care: Assistance with daily activities and social interaction",
+      "Educational Support: Tutoring and learning assistance for family members"
+    ],
+    "videos": [
+      {
+        "title": "NEO Gamma - Home Assistant Robot Overview",
+        "url": "https://www.youtube.com/watch?v=uVcBa6NXAbk",
+        "embedUrl": "https://www.youtube.com/embed/uVcBa6NXAbk"
+      }
+    ],
+    "images": [
+      "images/robots/neo gamma/neo-gamma-main.jpg",
+      "images/robots/neo gamma/neo-gamma-home-service.jpg"
+    ],
+    "sources": [
+      {
+        "title": "DrivingEco - NEO Gamma Humanoid Robot",
+        "url": "https://www.drivingeco.com/hu/startup-quiere-nuevo-companero-piso-sea-robot-humanoide/1x-technologies-unveils-neo-gamma-humanoid-robot/"
+      },
+      {
+        "title": "The Robot Report - NEO Gamma Better Fit for Home",
+        "url": "https://www.therobotreport.com/1x-built-humanoid-neo-gamma-better-fit-home/"
+      }
+    ],
+    "tags": ["Humanoid", "Home Assistant", "AI", "Companionship", "1X Technologies", "Domestic", "Service Robot"],
+    "releaseYear": "2024",
+    "status": "In Development"
+  },
+  {
     "id": "boston-dynamics-atlas",
     "title": "Boston Dynamics Atlas",
     "slug": "boston-dynamics-atlas",
