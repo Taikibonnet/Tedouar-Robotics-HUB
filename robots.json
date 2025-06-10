@@ -79,7 +79,7 @@
     "manufacturer": "1X Technologies",
     "category": "Humanoid",
     "featured": true,
-    "image": "images/robots/neo gamma/neo-gamma-main.jpg",
+    "image": "images/robots/neo gamma/neo-gamma-main.webp",
     "description": "NEO Gamma is a humanoid robot designed for home assistance, offering tasks like cleaning and companionship with advanced AI capabilities.",
     "fullDescription": "NEO Gamma is a next-generation humanoid robot developed by 1X Technologies, specifically designed for home environments. Standing approximately 1.65 meters tall and weighing around 30 kilograms, NEO Gamma integrates advanced AI to perform household tasks, engage in natural conversations, and provide companionship. Its design emphasizes safety and adaptability, featuring a soft knit suit and tendon-driven motion system for smooth, human-like movements.",
     "specifications": {
@@ -115,7 +115,7 @@
       }
     ],
     "images": [
-      "images/robots/neo gamma/neo-gamma-main.jpg",
+      "images/robots/neo gamma/neo-gamma-main.webp",
       "images/robots/neo gamma/neo-gamma-home-service.jpg"
     ],
     "sources": [
