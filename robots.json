@@ -133,6 +133,62 @@
     "status": "In Development"
   },
   {
+    "id": "corleo",
+    "title": "CORLEO",
+    "slug": "corleo",
+    "manufacturer": "Kawasaki Heavy Industries",
+    "category": "Quadruped",
+    "featured": true,
+    "image": "images/robots/corleo/corleo-main.jpg",
+    "description": "CORLEO is a hydrogen-powered quadruped robot by Kawasaki, designed to revolutionize off-road transportation with AI and adaptive mobility.",
+    "fullDescription": "CORLEO is an innovative quadruped robot developed by Kawasaki Heavy Industries, unveiled at the Osaka-Kansai Expo in April 2025. Combining Kawasaki's expertise in robotics and motorcycle engineering, CORLEO is designed as a rideable, hydrogen-powered robotic horse aimed at transforming off-road transportation. Its design draws inspiration from both horses and motorcycles, featuring four robotic legs with rubber hooves for terrain adaptability and a hydrogen-fueled engine that emits only water. While still in the conceptual phase, CORLEO showcases Kawasaki's vision for sustainable and intelligent mobility solutions.",
+    "specifications": {
+      "Design": "Quadruped structure resembling a robotic horse with motorcycle elements",
+      "Power Source": "Hydrogen-fueled 150cc engine powering electric drive systems",
+      "Mobility": "Four robotic legs with rubber hooves for navigating diverse terrains",
+      "AI Integration": "Artificial intelligence for balance, coordination, and real-time adaptation to rider movements",
+      "User Interface": "Dashboard display for critical riding data; night-vision road path projector",
+      "Capacity": "Designed to carry up to two riders",
+      "Emissions": "Zero harmful emissions - only water vapor",
+      "Terrain Capability": "Grasslands, rocky areas, rubble fields, and complex off-road environments"
+    },
+    "capabilities": [
+      "Terrain Navigation: Navigates complex terrains including grasslands, rocky areas, and rubble fields",
+      "Real-time Adaptation: Adjusts to rider's movements in real-time to maintain balance and stability",
+      "Eco-friendly Operation: Provides zero harmful emissions transportation with hydrogen power",
+      "Autonomous Navigation: Advanced sensors and AI for obstacle avoidance and path planning",
+      "Multi-rider Support: Designed to safely carry up to two riders simultaneously"
+    ],
+    "applications": [
+      "Transportation: Potential future alternative for off-road travel and exploration",
+      "Emergency Services: Could be adapted for search and rescue operations in challenging terrains",
+      "Recreational Use: Novel experience for adventure enthusiasts and tourists",
+      "Exhibitions and Demonstrations: Showcases advancements in robotics and sustainable transportation technologies",
+      "Military and Defense: Potential applications for reconnaissance and logistics in difficult terrain"
+    ],
+    "videos": [
+      {
+        "title": "CORLEO - Kawasaki's Rideable Robot Horse",
+        "url": "https://www.youtube.com/watch?v=vQDhzbTz-9k",
+        "embedUrl": "https://www.youtube.com/embed/vQDhzbTz-9k"
+      }
+    ],
+    "images": [
+      "images/robots/corleo/corleo-main.jpg",
+      "images/robots/corleo/corleo-side-view.jpg",
+      "images/robots/corleo/corleo-cockpit-view.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Kawasaki Heavy Industries - CORLEO Concept",
+        "url": "https://www.khi.co.jp/expo2025/concept01/index.html"
+      }
+    ],
+    "tags": ["Quadruped", "Kawasaki", "Hydrogen", "Transportation", "AI", "Motorcycle", "Off-road", "Sustainable"],
+    "releaseYear": "2025",
+    "status": "Concept"
+  },
+  {
     "id": "boston-dynamics-atlas",
     "title": "Boston Dynamics Atlas",
     "slug": "boston-dynamics-atlas",
