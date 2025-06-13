@@ -187,5 +187,60 @@
     "tags": ["Quadruped", "Kawasaki", "Hydrogen", "Transportation", "AI", "Motorcycle", "Off-road", "Sustainable"],
     "releaseYear": "2025",
     "status": "Concept"
+  },
+  {
+    "id": "peanut",
+    "title": "Peanut",
+    "slug": "peanut",
+    "manufacturer": "Peanut Robotics",
+    "category": "Service",
+    "featured": true,
+    "image": "images/robots/peanut/peanut-main.jpg",
+    "description": "AI-powered cleaning robot designed for commercial spaces, operating autonomously with advanced navigation and disinfection capabilities.",
+    "fullDescription": "Peanut is an advanced cleaning robot developed by Peanut Robotics, aimed at automating cleaning tasks in commercial environments such as hotels, offices, and stores. Utilizing transformer-based AI technology, Peanut navigates spaces independently, reaching difficult areas and operating continuously, except during charging periods. Its autonomous operation enhances efficiency and reduces the need for human intervention in routine cleaning tasks.",
+    "specifications": {
+      "Navigation": "Autonomous movement with advanced AI and transformer-based technology",
+      "Cleaning Mechanism": "Equipped with specialized cloth for surface cleaning and disinfection",
+      "Disinfection": "Utilizes EPA-rated chemicals with 99.999% efficacy against human coronaviruses",
+      "Operation Time": "Continuous operation with periodic charging cycles",
+      "Data Collection": "Environmental monitoring and data collection for ongoing improvements",
+      "Mobility": "Wheeled base with omnidirectional movement capabilities",
+      "Interface": "Touchscreen display for monitoring and control",
+      "Sensors": "Advanced navigation sensors for obstacle detection and path planning"
+    },
+    "capabilities": [
+      "Autonomous Cleaning: Performs independent cleaning in various commercial settings without human supervision",
+      "Advanced Navigation: Reaches tight and difficult areas using sophisticated AI pathfinding",
+      "Continuous Learning: Enhances cleaning processes through ongoing data collection and analysis",
+      "Disinfection: Provides medical-grade disinfection with EPA-rated chemical solutions",
+      "Adaptive Operation: Adjusts cleaning patterns based on space layout and usage patterns"
+    ],
+    "applications": [
+      "Hospitality: Hotels and resorts for automated room and common area cleaning",
+      "Corporate: Office buildings for routine maintenance and sanitization",
+      "Retail: Commercial outlets for floor cleaning and surface disinfection",
+      "Healthcare: Medical facilities for specialized cleaning and disinfection protocols",
+      "Education: Schools and universities for maintaining clean learning environments"
+    ],
+    "videos": [
+      {
+        "title": "Peanut - Autonomous Commercial Cleaning Robot",
+        "url": "https://www.youtube.com/watch?v=gTvor0XWtcs",
+        "embedUrl": "https://www.youtube.com/embed/gTvor0XWtcs"
+      }
+    ],
+    "images": [
+      "images/robots/peanut/peanut-main.jpg",
+      "images/robots/peanut/peanut-operation.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Peanut Robotics - Official Website",
+        "url": "https://www.peanutrobotics.com"
+      }
+    ],
+    "tags": ["Service Robot", "Cleaning", "AI", "Commercial", "Autonomous", "Disinfection", "Hospitality"],
+    "releaseYear": "2023",
+    "status": "Commercial"
   }
 ]
