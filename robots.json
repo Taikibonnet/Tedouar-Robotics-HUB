@@ -195,7 +195,7 @@
     "manufacturer": "Peanut Robotics",
     "category": "Service",
     "featured": true,
-    "image": "images/robots/peanut/peanut-main.jpg",
+    "image": "images/robots/peanut/peanut-main.png",
     "description": "AI-powered cleaning robot designed for commercial spaces, operating autonomously with advanced navigation and disinfection capabilities.",
     "fullDescription": "Peanut is an advanced cleaning robot developed by Peanut Robotics, aimed at automating cleaning tasks in commercial environments such as hotels, offices, and stores. Utilizing transformer-based AI technology, Peanut navigates spaces independently, reaching difficult areas and operating continuously, except during charging periods. Its autonomous operation enhances efficiency and reduces the need for human intervention in routine cleaning tasks.",
     "specifications": {
@@ -230,8 +230,8 @@
       }
     ],
     "images": [
-      "images/robots/peanut/peanut-main.jpg",
-      "images/robots/peanut/peanut-operation.jpg"
+      "images/robots/peanut/peanut-main.png",
+      "images/robots/peanut/peanut-operation.png"
     ],
     "sources": [
       {
