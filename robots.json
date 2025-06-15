@@ -250,7 +250,7 @@
     "manufacturer": "YIGOLI",
     "category": "Industrial",
     "featured": true,
-    "image": "images/robots/yigoli-energy-arm/yigoli-main.jpg",
+    "image": "images/robots/yigoli-energy-arm/energyarm-main.png",
     "description": "Robotic arm that automates vehicle refueling using advanced 3D imaging and AI for precise fuel cap handling.",
     "fullDescription": "The YIGOLI Energy Arm is an innovative robotic system designed to automate the vehicle refueling process. Utilizing 3D stereoscopic imaging and laser radar, it accurately identifies and opens fuel caps, inserts the nozzle, and refuels vehicles without human intervention. This cutting-edge technology enhances efficiency and safety at fueling stations while providing a seamless experience for drivers. The system represents a significant advancement in automotive service automation, combining precision robotics with intelligent recognition systems to revolutionize traditional gas station operations.",
     "specifications": {
@@ -285,9 +285,9 @@
       }
     ],
     "images": [
-      "images/robots/yigoli-energy-arm/yigoli-main.jpg",
-      "images/robots/yigoli-energy-arm/yigoli-operation.jpg",
-      "images/robots/yigoli-energy-arm/yigoli-station.jpg"
+      "images/robots/yigoli-energy-arm/energyarm-main.png",
+      "images/robots/yigoli-energy-arm/energyarm-operation.jpg",
+      "images/robots/yigoli-energy-arm/energyarm-station.jpg"
     ],
     "sources": [
       {
