@@ -298,5 +298,66 @@
     "tags": ["Industrial Robot", "Automation", "AI", "Computer Vision", "Fueling", "Service Automation", "3D Imaging"],
     "releaseYear": "2024",
     "status": "Commercial"
+  },
+  {
+    "id": "suzuki-moqba",
+    "title": "Suzuki MOQBA",
+    "slug": "suzuki-moqba",
+    "manufacturer": "Suzuki Motor Corporation",
+    "category": "Mobility",
+    "featured": true,
+    "image": "images/robots/suzuki-moqba/Image 1.jpg",
+    "description": "Suzuki's MOQBA is a modular electric quadruped-wheeled vehicle that climbs stairs and adapts to chair, stand, or stretcher modes.",
+    "fullDescription": "Unveiled at the Japan Mobility Show 2023, MOQBA is Suzuki's bold concept for next-generation urban mobility. It blends four electric wheels with robotic legs, enabling movement on flat surfaces and climbing stairs. Designed for accessibility, emergency response, and small-scale transport, this modular prototype can adjust its configuration for seated, standing, or stretcher use. The innovative design represents a paradigm shift in personal mobility, combining the efficiency of wheeled transport with the adaptability of legged robotics to navigate complex urban environments that traditional vehicles cannot access.",
+    "specifications": {
+      "Architecture": "Four robotic legs, each with 3 degrees of freedom, ending in electric wheels",
+      "Riding Modes": "Chair Mode (seated driving), Standing Mode (upright control), Stretcher Mode (patient transport)",
+      "Mobility": "Legs compress and extend to adapt to terrain, with speed bumps and stairs traversal via leg articulation",
+      "Top Speed": "Approximately 32 km/h (20 mph)",
+      "Range": "Up to 80 km (50 miles) per charge",
+      "Modularity": "Interchangeable attachments include wheelchair, cargo basket, robotic arm, or stretcher",
+      "Terrain Capability": "Flat surfaces, stairs, curbs, and various urban obstacles",
+      "Power Source": "Electric battery system with regenerative capabilities"
+    },
+    "capabilities": [
+      "Stair-climbing: Ascends and descends steps one leg at a time while keeping passengers level",
+      "Versatile configurations: Transitions smoothly between chair, stand, stretcher, or cargo use",
+      "Enhanced accessibility: Tailored for elderly, disabled, emergency services, or deliveries in complex urban environments",
+      "Adaptive terrain navigation: Automatically adjusts leg positioning and wheel configuration based on surface conditions",
+      "Modular functionality: Quick-change system for different operational modes and attachments"
+    ],
+    "applications": [
+      "Urban commuting & Last-mile travel: Ideal for navigating curbs and staircases in cities",
+      "Accessibility mobility: Empowers those with limited mobility to reclaim independence",
+      "Emergency response: Quickly transport patients or supplies in challenging environments",
+      "Light logistics: Carries goods, groceries, or refuse through built-up areas",
+      "Healthcare support: Mobile assistance platform for medical facilities and home care"
+    ],
+    "videos": [
+      {
+        "title": "Suzuki MOQBA - Stair-Climbing Electric Mobility Concept",
+        "url": "https://www.youtube.com/watch?v=mXVSde6V1Kw&t=57s",
+        "embedUrl": "https://www.youtube.com/embed/mXVSde6V1Kw?start=57"
+      }
+    ],
+    "images": [
+      "images/robots/suzuki-moqba/Image 1.jpg",
+      "images/robots/suzuki-moqba/Image 2.jpg",
+      "images/robots/suzuki-moqba/Image 3.jpg",
+      "images/robots/suzuki-moqba/Image 4.jpg"
+    ],
+    "sources": [
+      {
+        "title": "The Arsenale - Suzuki MOQBA Unveiled",
+        "url": "https://thearsenale.com/blogs/magazine/suzuki-moqba-unveiled-at-the-japan-mobility-show"
+      },
+      {
+        "title": "Captain Electro - Suzuki's Stair-Climbing Electric Marvel",
+        "url": "https://www.captainelectro.com/motorcycles/meet-suzukis-stair-climbing-electric-marvel-the-moqba-moto-goat"
+      }
+    ],
+    "tags": ["Mobility Robot", "Electric Vehicle", "Accessibility", "Stair-Climbing", "Modular Design", "Urban Transport", "Suzuki"],
+    "releaseYear": "2023",
+    "status": "Concept"
   }
 ]
