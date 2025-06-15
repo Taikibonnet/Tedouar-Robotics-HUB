@@ -1,432 +1,74 @@
 [
   {
-    "id": "tesla-optimus",
-    "title": "Tesla Optimus",
-    "slug": "tesla-optimus",
-    "manufacturer": "Tesla, Inc.",
-    "category": "Humanoid",
+    "id": "archax",
+    "title": "Archax",
+    "slug": "archax",
+    "manufacturer": "Tsubame Industries",
+    "category": "Mecha",
     "featured": true,
-    "image": "images/robots/tesla optimus/tesla-optimuis-main.jpg",
-    "description": "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation.",
-    "fullDescription": "Tesla's Optimus (also known as the Tesla Bot) is a general-purpose humanoid robot under development by Tesla, Inc. It was unveiled by Elon Musk during Tesla's AI Day event in August 2021. Designed to handle tasks that are repetitive, dangerous, or boring for humans, Optimus aims to revolutionize industries by introducing an affordable, autonomous, and safe labor force. Built with Tesla's expertise in AI, autopilot hardware, and energy systems, the robot represents Tesla's ambition to extend its AI capabilities beyond vehicles.",
+    "image": "images/robots/archax/archax-main.jpg",
+    "description": "A 4.5-meter-tall, 3.5-ton pilotable mecha robot blending anime aesthetics with real-world engineering, offering dual operation modes.",
+    "fullDescription": "Developed by Tokyo-based startup Tsubame Industries, Archax is a groundbreaking pilotable robot that brings the world of science fiction into reality. Standing at 4.5 meters tall and weighing 3.5 tons, Archax features a humanoid upper body with two arms and hands designed to mimic human movements. The robot offers two operation modes: an upright 'Robot Mode' and a 'Vehicle Mode' that allows it to travel at speeds of up to 10 km/h. Controlled from a cockpit located in the chest area, the pilot uses two joysticks, two pedals, and a touchscreen interface to maneuver the robot. The cockpit is equipped with four monitors displaying feeds from nine external cameras, providing a comprehensive view of the surroundings.",
     "specifications": {
-      "Height": "~5 ft 8 in (~1.73 meters)",
-      "Weight": "~125 pounds (~57 kg)",
-      "Payload Capacity": "~20 pounds (~9 kg)",
-      "Maximum Deadlift": "~150 pounds (~68 kg)",
-      "Maximum Speed": "~5 miles per hour (~8 km/h)",
-      "Hands": "Human-like, 5 fingers, precision grip",
-      "Actuators": "28 structural actuators, 11 hand actuators",
-      "Sensors": "Autopilot cameras, FSD (Full Self-Driving) hardware, force feedback sensing, tactile sensors",
-      "Power Source": "Battery pack (estimated 2.3 kWh)",
-      "Runtime": "Designed for a full day of work on a single charge (claimed)",
-      "Processor": "Tesla's Full Self-Driving Computer (FSD Computer)",
-      "Connectivity": "Wi-Fi and LTE modules (expected)"
+      "Height": "4.5 meters (14.8 feet)",
+      "Weight": "3.5 tons (7,700 pounds)",
+      "Operation Modes": "Robot Mode / Vehicle Mode",
+      "Top Speed": "10 km/h (Vehicle Mode)",
+      "Steering": "Front-wheel steering",
+      "Drivetrain": "Rear-wheel drive",
+      "Power Source": "Battery-powered (DC300V)",
+      "Degrees of Freedom": "26 movable joints",
+      "Control Interface": "2 Joysticks, 2 Pedals, Touchscreen",
+      "Display System": "4 Monitors showing feeds from 9 Cameras",
+      "Frame Material": "Iron (SS400) and Aluminum Alloy",
+      "Exterior Material": "Fiber-Reinforced Plastic (FRP) and 3D-Printed components"
     },
     "capabilities": [
-      "Mobility: Walking at a moderate pace, navigating complex environments",
-      "Dexterity: Manipulating objects, using tools, picking up delicate or heavy items",
-      "Perception: Understanding its environment via cameras and sensors (similar to Tesla's vehicle perception stack)",
-      "Cognition: Basic decision-making, simple conversations, and task learning through demonstrations",
-      "Safety: Designed with lightweight materials and limited physical power to minimize risk to humans"
+      "Pilotable Cockpit: Comprehensive control interfaces for human operation",
+      "Dual Operation Modes: Versatile movement between Robot Mode and Vehicle Mode",
+      "Advanced Camera System: 360-degree visibility through 9-camera setup",
+      "Articulated Limbs: Expressive gestures and human-like arm movements",
+      "Safety Compliance: Adheres to ISO and JIS international safety standards"
     ],
     "applications": [
-      "Industrial: Assisting in manufacturing, warehouse logistics, and material handling",
-      "Domestic: Performing household chores, running errands",
-      "Commercial: Serving in retail, restaurants, and customer service roles",
-      "Healthcare: Supporting elderly or disabled individuals with daily activities",
-      "Space and Exploration: Long-term potential to assist in extraterrestrial missions where human labor is costly and risky"
+      "Entertainment: Exhibitions, theme parks, and promotional events",
+      "Research & Development: Testing platform for advanced robotics technologies",
+      "Luxury Collectibles: High-end personal ownership for robotics enthusiasts",
+      "Media & Film: Practical effects and promotional content creation",
+      "Educational Demonstrations: Showcasing advanced engineering and robotics principles"
     ],
     "videos": [
       {
-        "title": "Tesla Optimus - Official Demonstration",
-        "url": "https://www.youtube.com/watch?v=cpraXaw7dyc",
-        "embedUrl": "https://www.youtube.com/embed/cpraXaw7dyc"
+        "title": "Archax - Pilotable Mecha Robot Demonstration",
+        "url": "https://www.youtube.com/watch?v=9OuePFOk0NY",
+        "embedUrl": "https://www.youtube.com/embed/9OuePFOk0NY"
       },
       {
-        "title": "Tesla Optimus - Latest Updates",
-        "url": "https://www.youtube.com/watch?v=DrNcXgoFv20",
-        "embedUrl": "https://www.youtube.com/embed/DrNcXgoFv20"
+        "title": "Archax - Advanced Operation Modes",
+        "url": "https://www.youtube.com/watch?v=zPZRaXVxcqw",
+        "embedUrl": "https://www.youtube.com/embed/zPZRaXVxcqw"
       }
     ],
     "images": [
-      "images/robots/tesla optimus/tesla-optimuis-main.jpg",
-      "images/robots/tesla optimus/tesla-optimus-cooking.webp",
-      "images/robots/tesla optimus/tesla-optimus-standing.png"
+      "images/robots/archax/archax-main.jpg",
+      "images/robots/archax/archax-cockpit.jpg",
+      "images/robots/archax/archax-workshop.jpg",
+      "images/robots/archax/archax-outdoor.jpg"
     ],
     "sources": [
       {
-        "title": "Wikipedia - Tesla Bot",
-        "url": "https://es.wikipedia.org/wiki/Tesla_Bot#/media/Archivo:Tesla-optimus-bot-gen-2-scaled_(cropped).jpg"
+        "title": "Tsubame Industries - Official Website",
+        "url": "https://tsubame-hi.com/en/"
       },
       {
-        "title": "Notebookcheck - Tesla Optimus Release",
-        "url": "https://www.notebookcheck.org/Elon-Musk-Tesla-liberara-5-000-robots-Optimus-en-2025.984475.0.html"
-      },
-      {
-        "title": "Xpert Digital - Optimus Roboticus",
-        "url": "https://xpert.digital/es/optimus-roboticus-humaniforme/"
+        "title": "NHK World - Archax Coverage",
+        "url": "https://www3.nhk.or.jp/nhkworld/en/news/backstories/2702/"
       }
     ],
-    "tags": ["AI", "Humanoid", "Tesla", "Automation", "General Purpose", "Labor", "Manufacturing"],
-    "releaseYear": "2021",
-    "status": "In Development"
-  },
-  {
-    "id": "neo-gamma",
-    "title": "NEO Gamma",
-    "slug": "neo-gamma",
-    "manufacturer": "1X Technologies",
-    "category": "Humanoid",
-    "featured": true,
-    "image": "images/robots/neo gamma/neo-gamma-main.webp",
-    "description": "NEO Gamma is a humanoid robot designed for home assistance, offering tasks like cleaning and companionship with advanced AI capabilities.",
-    "fullDescription": "NEO Gamma is a next-generation humanoid robot developed by 1X Technologies, specifically designed for home environments. Standing approximately 1.65 meters tall and weighing around 30 kilograms, NEO Gamma integrates advanced AI to perform household tasks, engage in natural conversations, and provide companionship. Its design emphasizes safety and adaptability, featuring a soft knit suit and tendon-driven motion system for smooth, human-like movements.",
-    "specifications": {
-      "Height": "Approximately 1.65 meters (5.4 feet)",
-      "Weight": "Around 30 kilograms (66 pounds)",
-      "Mobility": "Natural human-like gait with the ability to squat, sit, and walk",
-      "Hands": "Five-fingered hands capable of delicate object manipulation",
-      "Sensors": "Visual sensors for object recognition and navigation",
-      "Audio System": "Four microphones with beamforming and echo cancellation; three speakers for voice interaction and audio playback",
-      "AI Capabilities": "Proprietary language model for natural conversation; reinforcement learning-based motion control",
-      "Safety Features": "Soft knit suit and tendon-driven joints for safe interaction in home environments",
-      "Noise Level": "Operates quietly, comparable to the noise level of a refrigerator"
-    },
-    "capabilities": [
-      "Household Chores: Performs tidying, deep cleaning, and home management tasks",
-      "Natural Conversation: Engages in conversations and provides companionship using advanced language models",
-      "Adaptive Learning: Learns and adapts to new tasks through reinforcement learning",
-      "Object Manipulation: Delicate handling of household items with five-fingered hands",
-      "Quiet Operation: Minimal noise during operation for comfortable home environment"
-    ],
-    "applications": [
-      "Home Assistance: Cleaning, organizing, and managing household tasks",
-      "Companionship: Engaging in conversations, providing emotional support, and tutoring",
-      "Smart Home Integration: Potential to integrate with other smart home devices for enhanced automation",
-      "Elderly Care: Assistance with daily activities and social interaction",
-      "Educational Support: Tutoring and learning assistance for family members"
-    ],
-    "videos": [
-      {
-        "title": "NEO Gamma - Home Assistant Robot Overview",
-        "url": "https://www.youtube.com/watch?v=uVcBa6NXAbk",
-        "embedUrl": "https://www.youtube.com/embed/uVcBa6NXAbk"
-      }
-    ],
-    "images": [
-      "images/robots/neo gamma/neo-gamma-main.webp",
-      "images/robots/neo gamma/neo-gamma-home-service.jpg"
-    ],
-    "sources": [
-      {
-        "title": "DrivingEco - NEO Gamma Humanoid Robot",
-        "url": "https://www.drivingeco.com/hu/startup-quiere-nuevo-companero-piso-sea-robot-humanoide/1x-technologies-unveils-neo-gamma-humanoid-robot/"
-      },
-      {
-        "title": "The Robot Report - NEO Gamma Better Fit for Home",
-        "url": "https://www.therobotreport.com/1x-built-humanoid-neo-gamma-better-fit-home/"
-      }
-    ],
-    "tags": ["Humanoid", "Home Assistant", "AI", "Companionship", "1X Technologies", "Domestic", "Service Robot"],
-    "releaseYear": "2024",
-    "status": "In Development"
-  },
-  {
-    "id": "corleo",
-    "title": "CORLEO",
-    "slug": "corleo",
-    "manufacturer": "Kawasaki Heavy Industries",
-    "category": "Quadruped",
-    "featured": true,
-    "image": "images/robots/corleo/corleo-main.jpg",
-    "description": "CORLEO is a hydrogen-powered quadruped robot by Kawasaki, designed to revolutionize off-road transportation with AI and adaptive mobility.",
-    "fullDescription": "CORLEO is an innovative quadruped robot developed by Kawasaki Heavy Industries, unveiled at the Osaka-Kansai Expo in April 2025. Combining Kawasaki's expertise in robotics and motorcycle engineering, CORLEO is designed as a rideable, hydrogen-powered robotic horse aimed at transforming off-road transportation. Its design draws inspiration from both horses and motorcycles, featuring four robotic legs with rubber hooves for terrain adaptability and a hydrogen-fueled engine that emits only water. While still in the conceptual phase, CORLEO showcases Kawasaki's vision for sustainable and intelligent mobility solutions.",
-    "specifications": {
-      "Design": "Quadruped structure resembling a robotic horse with motorcycle elements",
-      "Power Source": "Hydrogen-fueled 150cc engine powering electric drive systems",
-      "Mobility": "Four robotic legs with rubber hooves for navigating diverse terrains",
-      "AI Integration": "Artificial intelligence for balance, coordination, and real-time adaptation to rider movements",
-      "User Interface": "Dashboard display for critical riding data; night-vision road path projector",
-      "Capacity": "Designed to carry up to two riders",
-      "Emissions": "Zero harmful emissions - only water vapor",
-      "Terrain Capability": "Grasslands, rocky areas, rubble fields, and complex off-road environments"
-    },
-    "capabilities": [
-      "Terrain Navigation: Navigates complex terrains including grasslands, rocky areas, and rubble fields",
-      "Real-time Adaptation: Adjusts to rider's movements in real-time to maintain balance and stability",
-      "Eco-friendly Operation: Provides zero harmful emissions transportation with hydrogen power",
-      "Autonomous Navigation: Advanced sensors and AI for obstacle avoidance and path planning",
-      "Multi-rider Support: Designed to safely carry up to two riders simultaneously"
-    ],
-    "applications": [
-      "Transportation: Potential future alternative for off-road travel and exploration",
-      "Emergency Services: Could be adapted for search and rescue operations in challenging terrains",
-      "Recreational Use: Novel experience for adventure enthusiasts and tourists",
-      "Exhibitions and Demonstrations: Showcases advancements in robotics and sustainable transportation technologies",
-      "Military and Defense: Potential applications for reconnaissance and logistics in difficult terrain"
-    ],
-    "videos": [
-      {
-        "title": "CORLEO - Kawasaki's Rideable Robot Horse",
-        "url": "https://www.youtube.com/watch?v=vQDhzbTz-9k",
-        "embedUrl": "https://www.youtube.com/embed/vQDhzbTz-9k"
-      }
-    ],
-    "images": [
-      "images/robots/corleo/corleo-main.jpg",
-      "images/robots/corleo/corleo-side-view.jpg",
-      "images/robots/corleo/corleo-cockpit-view.jpg"
-    ],
-    "sources": [
-      {
-        "title": "Kawasaki Heavy Industries - CORLEO Concept",
-        "url": "https://www.khi.co.jp/expo2025/concept01/index.html"
-      }
-    ],
-    "tags": ["Quadruped", "Kawasaki", "Hydrogen", "Transportation", "AI", "Motorcycle", "Off-road", "Sustainable"],
-    "releaseYear": "2025",
-    "status": "Concept"
-  },
-  {
-    "id": "peanut",
-    "title": "Peanut",
-    "slug": "peanut",
-    "manufacturer": "Peanut Robotics",
-    "category": "Service",
-    "featured": true,
-    "image": "images/robots/peanut/Peanut-main.png",
-    "description": "AI-powered cleaning robot designed for commercial spaces, operating autonomously with advanced navigation and disinfection capabilities.",
-    "fullDescription": "Peanut is an advanced cleaning robot developed by Peanut Robotics, aimed at automating cleaning tasks in commercial environments such as hotels, offices, and stores. Utilizing transformer-based AI technology, Peanut navigates spaces independently, reaching difficult areas and operating continuously, except during charging periods. Its autonomous operation enhances efficiency and reduces the need for human intervention in routine cleaning tasks.",
-    "specifications": {
-      "Navigation": "Autonomous movement with advanced AI and transformer-based technology",
-      "Cleaning Mechanism": "Equipped with specialized cloth for surface cleaning and disinfection",
-      "Disinfection": "Utilizes EPA-rated chemicals with 99.999% efficacy against human coronaviruses",
-      "Operation Time": "Continuous operation with periodic charging cycles",
-      "Data Collection": "Environmental monitoring and data collection for ongoing improvements",
-      "Mobility": "Wheeled base with omnidirectional movement capabilities",
-      "Interface": "Touchscreen display for monitoring and control",
-      "Sensors": "Advanced navigation sensors for obstacle detection and path planning"
-    },
-    "capabilities": [
-      "Autonomous Cleaning: Performs independent cleaning in various commercial settings without human supervision",
-      "Advanced Navigation: Reaches tight and difficult areas using sophisticated AI pathfinding",
-      "Continuous Learning: Enhances cleaning processes through ongoing data collection and analysis",
-      "Disinfection: Provides medical-grade disinfection with EPA-rated chemical solutions",
-      "Adaptive Operation: Adjusts cleaning patterns based on space layout and usage patterns"
-    ],
-    "applications": [
-      "Hospitality: Hotels and resorts for automated room and common area cleaning",
-      "Corporate: Office buildings for routine maintenance and sanitization",
-      "Retail: Commercial outlets for floor cleaning and surface disinfection",
-      "Healthcare: Medical facilities for specialized cleaning and disinfection protocols",
-      "Education: Schools and universities for maintaining clean learning environments"
-    ],
-    "videos": [
-      {
-        "title": "Peanut - Autonomous Commercial Cleaning Robot",
-        "url": "https://www.youtube.com/watch?v=gTvor0XWtcs",
-        "embedUrl": "https://www.youtube.com/embed/gTvor0XWtcs"
-      }
-    ],
-    "images": [
-      "images/robots/peanut/Peanut-main.png",
-      "images/robots/peanut/Peanut-operation.png"
-    ],
-    "sources": [
-      {
-        "title": "Peanut Robotics - Official Website",
-        "url": "https://www.peanutrobotics.com"
-      }
-    ],
-    "tags": ["Service Robot", "Cleaning", "AI", "Commercial", "Autonomous", "Disinfection", "Hospitality"],
+    "tags": ["Mecha", "Pilotable Robot", "Tsubame Industries", "Anime-Inspired", "Dual Mode", "Limited Production", "Japanese Engineering"],
     "releaseYear": "2023",
-    "status": "Commercial"
-  },
-  {
-    "id": "yigoli-energy-arm",
-    "title": "YIGOLI Energy Arm",
-    "slug": "yigoli-energy-arm",
-    "manufacturer": "YIGOLI",
-    "category": "Industrial",
-    "featured": true,
-    "image": "images/robots/yigoli-energy-arm/energyarm-main.png",
-    "description": "Robotic arm that automates vehicle refueling using advanced 3D imaging and AI for precise fuel cap handling.",
-    "fullDescription": "The YIGOLI Energy Arm is an innovative robotic system designed to automate the vehicle refueling process. Utilizing 3D stereoscopic imaging and laser radar, it accurately identifies and opens fuel caps, inserts the nozzle, and refuels vehicles without human intervention. This cutting-edge technology enhances efficiency and safety at fueling stations while providing a seamless experience for drivers. The system represents a significant advancement in automotive service automation, combining precision robotics with intelligent recognition systems to revolutionize traditional gas station operations.",
-    "specifications": {
-      "Imaging System": "3D stereoscopic imaging and laser radar for precise vehicle identification",
-      "Recognition Technology": "Advanced AI algorithms for fuel cap identification and positioning",
-      "Precision": "High-accuracy robotic arm with multiple degrees of freedom",
-      "Operation Mode": "Fully automated refueling process without human intervention",
-      "Safety Features": "Multiple safety sensors and emergency stop mechanisms",
-      "Compatibility": "Designed to work with various vehicle types and fuel cap designs",
-      "Weather Resistance": "All-weather operation capability for outdoor installations",
-      "Processing Speed": "Real-time image processing and decision making"
-    },
-    "capabilities": [
-      "Automated Fuel Cap Recognition: Uses 3D imaging to identify and locate fuel caps on various vehicle models",
-      "Precise Robotic Manipulation: Accurately opens fuel caps and inserts nozzles with mechanical precision",
-      "Intelligent Navigation: Advanced AI guidance system for optimal positioning and movement",
-      "Safety Monitoring: Continuous monitoring of the refueling process with automatic error detection",
-      "Vehicle Compatibility: Adapts to different vehicle heights, fuel cap positions, and access requirements"
-    ],
-    "applications": [
-      "Fueling Stations: Automating the refueling process for enhanced efficiency and reduced wait times",
-      "Fleet Management: Streamlining refueling operations for large vehicle fleets and logistics companies",
-      "Highway Service Centers: Providing automated fueling services for long-distance travelers",
-      "Commercial Depots: Automated refueling for delivery trucks, buses, and commercial vehicles",
-      "Smart Cities: Integration into intelligent transportation infrastructure for autonomous vehicle support"
-    ],
-    "videos": [
-      {
-        "title": "YIGOLI Energy Arm - Automated Vehicle Refueling System",
-        "url": "https://www.youtube.com/watch?v=qxwGasEqmPU",
-        "embedUrl": "https://www.youtube.com/embed/qxwGasEqmPU"
-      }
-    ],
-    "images": [
-      "images/robots/yigoli-energy-arm/energyarm-main.png",
-      "images/robots/yigoli-energy-arm/energyarm-operation.jpg",
-      "images/robots/yigoli-energy-arm/energyarm-station.jpg"
-    ],
-    "sources": [
-      {
-        "title": "YIGOLI Official Product Page",
-        "url": "https://www.1kmxc.com/smoothly.html"
-      }
-    ],
-    "tags": ["Industrial Robot", "Automation", "AI", "Computer Vision", "Fueling", "Service Automation", "3D Imaging"],
-    "releaseYear": "2024",
-    "status": "Commercial"
-  },
-  {
-    "id": "suzuki-moqba",
-    "title": "Suzuki MOQBA",
-    "slug": "suzuki-moqba",
-    "manufacturer": "Suzuki Motor Corporation",
-    "category": "Mobility",
-    "featured": true,
-    "image": "images/robots/suzuki-moqba/moqba-main.jpg",
-    "description": "Suzuki's MOQBA is a modular electric quadruped-wheeled vehicle that climbs stairs and adapts to chair, stand, or stretcher modes.",
-    "fullDescription": "Unveiled at the Japan Mobility Show 2023, MOQBA is Suzuki's bold concept for next-generation urban mobility. It blends four electric wheels with robotic legs, enabling movement on flat surfaces and climbing stairs. Designed for accessibility, emergency response, and small-scale transport, this modular prototype can adjust its configuration for seated, standing, or stretcher use. The innovative design represents a paradigm shift in personal mobility, combining the efficiency of wheeled transport with the adaptability of legged robotics to navigate complex urban environments that traditional vehicles cannot access.",
-    "specifications": {
-      "Architecture": "Four robotic legs, each with 3 degrees of freedom, ending in electric wheels",
-      "Riding Modes": "Chair Mode (seated driving), Standing Mode (upright control), Stretcher Mode (patient transport)",
-      "Mobility": "Legs compress and extend to adapt to terrain, with speed bumps and stairs traversal via leg articulation",
-      "Top Speed": "Approximately 32 km/h (20 mph)",
-      "Range": "Up to 80 km (50 miles) per charge",
-      "Modularity": "Interchangeable attachments include wheelchair, cargo basket, robotic arm, or stretcher",
-      "Terrain Capability": "Flat surfaces, stairs, curbs, and various urban obstacles",
-      "Power Source": "Electric battery system with regenerative capabilities"
-    },
-    "capabilities": [
-      "Stair-climbing: Ascends and descends steps one leg at a time while keeping passengers level",
-      "Versatile configurations: Transitions smoothly between chair, stand, stretcher, or cargo use",
-      "Enhanced accessibility: Tailored for elderly, disabled, emergency services, or deliveries in complex urban environments",
-      "Adaptive terrain navigation: Automatically adjusts leg positioning and wheel configuration based on surface conditions",
-      "Modular functionality: Quick-change system for different operational modes and attachments"
-    ],
-    "applications": [
-      "Urban commuting & Last-mile travel: Ideal for navigating curbs and staircases in cities",
-      "Accessibility mobility: Empowers those with limited mobility to reclaim independence",
-      "Emergency response: Quickly transport patients or supplies in challenging environments",
-      "Light logistics: Carries goods, groceries, or refuse through built-up areas",
-      "Healthcare support: Mobile assistance platform for medical facilities and home care"
-    ],
-    "videos": [
-      {
-        "title": "Suzuki MOQBA - Stair-Climbing Electric Mobility Concept",
-        "url": "https://www.youtube.com/watch?v=mXVSde6V1Kw&t=57s",
-        "embedUrl": "https://www.youtube.com/embed/mXVSde6V1Kw?start=57"
-      }
-    ],
-    "images": [
-      "images/robots/suzuki-moqba/moqba-main.jpg",
-      "images/robots/suzuki-moqba/moqba-demo.jpg",
-      "images/robots/suzuki-moqba/moqba-examples.webp",
-      "images/robots/suzuki-moqba/moqba-front-back.jpg"
-    ],
-    "sources": [
-      {
-        "title": "The Arsenale - Suzuki MOQBA Unveiled",
-        "url": "https://thearsenale.com/blogs/magazine/suzuki-moqba-unveiled-at-the-japan-mobility-show"
-      },
-      {
-        "title": "Captain Electro - Suzuki's Stair-Climbing Electric Marvel",
-        "url": "https://www.captainelectro.com/motorcycles/meet-suzukis-stair-climbing-electric-marvel-the-moqba-moto-goat"
-      }
-    ],
-    "tags": ["Mobility Robot", "Electric Vehicle", "Accessibility", "Stair-Climbing", "Modular Design", "Urban Transport", "Suzuki"],
-    "releaseYear": "2023",
-    "status": "Concept"
-  },
-  {
-    "id": "kubota-katr",
-    "title": "Kubota KATR",
-    "slug": "kubota-katr",
-    "manufacturer": "Kubota Corporation",
-    "category": "Agricultural",
-    "featured": true,
-    "image": "images/robots/kubota-katr/KATR-feature.jpeg",
-    "description": "Kubota's KATR is a compact, hydraulically legged all-terrain robot offering stable cargo transport across slopes and rugged environments.",
-    "fullDescription": "Developed by Kubota Corporation, KATR (Kubota All-Terrain Robot) is a four-wheeled robotic platform with hydraulically actuated legs that adjust in real-time to maintain a level cargo deck on uneven terrain. Launched in 2024, it received the CES® 2025 Innovation Awards' 'Best of Innovation' in Industrial Equipment & Machinery. Designed for agriculture, construction, forestry, and disaster relief, it excels in areas where traditional machinery struggles. The innovative design combines the stability of tracked vehicles with the agility of legged robots, making it perfect for precision farming and challenging terrain operations.",
-    "specifications": {
-      "Payload Capacity": "Up to 240–284 kg (approximately 530 lb)",
-      "Wheel & Leg System": "Dual-wheel per leg; hydraulic legs adjust to terrain to keep the deck level",
-      "Powertrain": "Available with either combustion engine or electric drive (electric variant in development)",
-      "Size & Compactness": "Small enough to fit into a light pickup truck bed or commercial minivan",
-      "Control Modes": "Operable via onboard controller or remote control",
-      "Stability System": "Proprietary real-time algorithm and sensor suite dynamically maintain level cargo platform on slopes",
-      "Steering": "Pivot-turn capability enables operation in tight spaces",
-      "Terrain Capability": "Handles slopes, uneven ground, and challenging agricultural environments"
-    },
-    "capabilities": [
-      "Level Cargo Deck: Hydraulic leg adjustments handle slopes and uneven ground seamlessly",
-      "Robust Multi-Terrain Mobility: Four-wheel drive, each on independent hydraulic legs, allow traversing rugged off-road environments",
-      "Versatile Deployment: Supports agriculture, forestry, construction, and disaster relief operations",
-      "Modular Platform: Cargo deck can carry tools, sensors, or even serve as a working platform",
-      "Flexible Power Options: Users can choose combustion or full-electric variant to match use case and sustainability goals"
-    ],
-    "applications": [
-      "Agriculture: Especially effective in hilly or terraced farms, orchards, and vineyards; modular attachments (sprayers, sensors) aid in precision farming",
-      "Construction & Forestry: Transport materials and operate equipment on steep, uneven terrain",
-      "Disaster Response: Delivers supplies over rubble or landslide-affected areas where wheeled vehicles struggle",
-      "Research & Development: Acts as a scalable platform for experimenting with attachments (e.g., pruners, imagers, robotic arms)",
-      "Vineyard Operations: Perfect for navigating between vine rows and carrying harvesting equipment on slopes"
-    ],
-    "videos": [
-      {
-        "title": "Kubota KATR - All-Terrain Agricultural Robot",
-        "url": "https://www.youtube.com/watch?v=t4R7Z1XbLew",
-        "embedUrl": "https://www.youtube.com/embed/t4R7Z1XbLew"
-      },
-      {
-        "title": "Kubota KATR - Vineyard Operations Demo",
-        "url": "https://www.youtube.com/watch?v=baEa1LkIye0",
-        "embedUrl": "https://www.youtube.com/embed/baEa1LkIye0"
-      }
-    ],
-    "images": [
-      "images/robots/kubota-katr/KATR-feature.jpeg",
-      "images/robots/kubota-katr/KATR-operation.webp",
-      "images/robots/kubota-katr/KATR-typeV.jpg"
-    ],
-    "sources": [
-      {
-        "title": "Kubota Corporation - KATR Official News",
-        "url": "https://www.kubota.com/news/2025/20250310.html"
-      },
-      {
-        "title": "Drone.jp - Kubota KATR Coverage",
-        "url": "https://www.drone.jp/news/20241123160032104227.html"
-      },
-      {
-        "title": "Farm Progress - Kubota Robots Bring Versatility to the Vineyard",
-        "url": "https://www.farmprogress.com/farming-equipment/kubota-robots-bring-versatility-to-the-vineyard"
-      }
-    ],
-    "tags": ["Agricultural Robot", "All-Terrain", "Hydraulic Legs", "Precision Farming", "Kubota", "CES Innovation Award", "Level Platform"],
-    "releaseYear": "2024",
-    "status": "Commercial"
+    "status": "Limited Production",
+    "price": "$2.7 million USD",
+    "productionRun": "5 units"
   }
 ]
