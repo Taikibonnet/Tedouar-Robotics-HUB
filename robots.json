@@ -51,9 +51,9 @@
     ],
     "images": [
       "images/robots/archax/archax-main.jpg",
-      "images/robots/archax/archax-cockpit.jpg",
-      "images/robots/archax/archax-workshop.jpg",
-      "images/robots/archax/archax-outdoor.jpg"
+      "images/robots/archax/archax-cockpit.jpeg",
+      "images/robots/archax/archax-demo.jpeg",
+      "images/robots/archax/archax-top-to-bottom.webp"
     ],
     "sources": [
       {
