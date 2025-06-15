@@ -306,7 +306,7 @@
     "manufacturer": "Suzuki Motor Corporation",
     "category": "Mobility",
     "featured": true,
-    "image": "images/robots/suzuki-moqba/Image 1.jpg",
+    "image": "images/robots/suzuki-moqba/moqba-main.jpg",
     "description": "Suzuki's MOQBA is a modular electric quadruped-wheeled vehicle that climbs stairs and adapts to chair, stand, or stretcher modes.",
     "fullDescription": "Unveiled at the Japan Mobility Show 2023, MOQBA is Suzuki's bold concept for next-generation urban mobility. It blends four electric wheels with robotic legs, enabling movement on flat surfaces and climbing stairs. Designed for accessibility, emergency response, and small-scale transport, this modular prototype can adjust its configuration for seated, standing, or stretcher use. The innovative design represents a paradigm shift in personal mobility, combining the efficiency of wheeled transport with the adaptability of legged robotics to navigate complex urban environments that traditional vehicles cannot access.",
     "specifications": {
@@ -341,10 +341,10 @@
       }
     ],
     "images": [
-      "images/robots/suzuki-moqba/Image 1.jpg",
-      "images/robots/suzuki-moqba/Image 2.jpg",
-      "images/robots/suzuki-moqba/Image 3.jpg",
-      "images/robots/suzuki-moqba/Image 4.jpg"
+      "images/robots/suzuki-moqba/moqba-main.jpg",
+      "images/robots/suzuki-moqba/moqba-demo.jpg",
+      "images/robots/suzuki-moqba/moqba-examples.webp",
+      "images/robots/suzuki-moqba/moqba-front-back.jpg"
     ],
     "sources": [
       {
