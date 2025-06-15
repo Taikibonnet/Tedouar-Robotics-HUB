@@ -242,5 +242,61 @@
     "tags": ["Service Robot", "Cleaning", "AI", "Commercial", "Autonomous", "Disinfection", "Hospitality"],
     "releaseYear": "2023",
     "status": "Commercial"
+  },
+  {
+    "id": "yigoli-energy-arm",
+    "title": "YIGOLI Energy Arm",
+    "slug": "yigoli-energy-arm",
+    "manufacturer": "YIGOLI",
+    "category": "Industrial",
+    "featured": true,
+    "image": "images/robots/yigoli-energy-arm/yigoli-main.jpg",
+    "description": "Robotic arm that automates vehicle refueling using advanced 3D imaging and AI for precise fuel cap handling.",
+    "fullDescription": "The YIGOLI Energy Arm is an innovative robotic system designed to automate the vehicle refueling process. Utilizing 3D stereoscopic imaging and laser radar, it accurately identifies and opens fuel caps, inserts the nozzle, and refuels vehicles without human intervention. This cutting-edge technology enhances efficiency and safety at fueling stations while providing a seamless experience for drivers. The system represents a significant advancement in automotive service automation, combining precision robotics with intelligent recognition systems to revolutionize traditional gas station operations.",
+    "specifications": {
+      "Imaging System": "3D stereoscopic imaging and laser radar for precise vehicle identification",
+      "Recognition Technology": "Advanced AI algorithms for fuel cap identification and positioning",
+      "Precision": "High-accuracy robotic arm with multiple degrees of freedom",
+      "Operation Mode": "Fully automated refueling process without human intervention",
+      "Safety Features": "Multiple safety sensors and emergency stop mechanisms",
+      "Compatibility": "Designed to work with various vehicle types and fuel cap designs",
+      "Weather Resistance": "All-weather operation capability for outdoor installations",
+      "Processing Speed": "Real-time image processing and decision making"
+    },
+    "capabilities": [
+      "Automated Fuel Cap Recognition: Uses 3D imaging to identify and locate fuel caps on various vehicle models",
+      "Precise Robotic Manipulation: Accurately opens fuel caps and inserts nozzles with mechanical precision",
+      "Intelligent Navigation: Advanced AI guidance system for optimal positioning and movement",
+      "Safety Monitoring: Continuous monitoring of the refueling process with automatic error detection",
+      "Vehicle Compatibility: Adapts to different vehicle heights, fuel cap positions, and access requirements"
+    ],
+    "applications": [
+      "Fueling Stations: Automating the refueling process for enhanced efficiency and reduced wait times",
+      "Fleet Management: Streamlining refueling operations for large vehicle fleets and logistics companies",
+      "Highway Service Centers: Providing automated fueling services for long-distance travelers",
+      "Commercial Depots: Automated refueling for delivery trucks, buses, and commercial vehicles",
+      "Smart Cities: Integration into intelligent transportation infrastructure for autonomous vehicle support"
+    ],
+    "videos": [
+      {
+        "title": "YIGOLI Energy Arm - Automated Vehicle Refueling System",
+        "url": "https://www.youtube.com/watch?v=qxwGasEqmPU",
+        "embedUrl": "https://www.youtube.com/embed/qxwGasEqmPU"
+      }
+    ],
+    "images": [
+      "images/robots/yigoli-energy-arm/yigoli-main.jpg",
+      "images/robots/yigoli-energy-arm/yigoli-operation.jpg",
+      "images/robots/yigoli-energy-arm/yigoli-station.jpg"
+    ],
+    "sources": [
+      {
+        "title": "YIGOLI Official Product Page",
+        "url": "https://www.1kmxc.com/smoothly.html"
+      }
+    ],
+    "tags": ["Industrial Robot", "Automation", "AI", "Computer Vision", "Fueling", "Service Automation", "3D Imaging"],
+    "releaseYear": "2024",
+    "status": "Commercial"
   }
 ]
