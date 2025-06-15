@@ -91,7 +91,7 @@ header::after {
     position: relative;
 }
 
-/* Enhanced Logo - BIGGER SIZE */
+/* Enhanced Logo - ALWAYS VISIBLE */
 .logo-container {
     position: relative;
     display: flex;
@@ -102,6 +102,16 @@ header::after {
     height: 80px;
     width: auto;
     max-width: 200px;
+    /* Ensure logo is always visible immediately */
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    transition: none !important;
+}
+
+/* Override any potential opacity or transform from JavaScript */
+.logo-container .logo {
+    visibility: visible !important;
+    display: block !important;
 }
 
 /* Futuristic Navigation */
@@ -435,7 +445,7 @@ header::after {
     flex-wrap: wrap;
 }
 
-/* Floating Animation for Hero Image */
+/* Floating Animation for Hero Image - ALWAYS VISIBLE */
 .hero-image {
     position: relative;
     animation: float 6s ease-in-out infinite;
@@ -446,6 +456,16 @@ header::after {
 .hero-image img {
     max-width: 100%;
     height: auto;
+    /* Ensure hero robot is always visible immediately */
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    transition: none !important;
+}
+
+/* Override any potential opacity or transform from JavaScript */
+.hero-image img {
+    visibility: visible !important;
+    display: block !important;
 }
 
 @keyframes float {
