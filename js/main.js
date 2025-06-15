@@ -54,15 +54,63 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Add loading animation to images
-    const images = document.querySelectorAll('img');
+    // Ensure logo is always visible immediately
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        logo.style.opacity = '1';
+        logo.style.transform = 'scale(1)';
+        logo.style.transition = 'none'; // Remove any transition that might delay visibility
+        
+        // If logo has load event, ensure it's visible
+        logo.addEventListener('load', function() {
+            this.style.opacity = '1';
+            this.style.transform = 'scale(1)';
+        });
+        
+        // If logo is already loaded (cached)
+        if (logo.complete && logo.naturalWidth !== 0) {
+            logo.style.opacity = '1';
+            logo.style.transform = 'scale(1)';
+        }
+    }
+    
+    // Ensure hero robot is always visible immediately
+    const heroRobot = document.querySelector('.hero-image img');
+    if (heroRobot) {
+        heroRobot.style.opacity = '1';
+        heroRobot.style.transform = 'scale(1)';
+        heroRobot.style.transition = 'none'; // Remove any transition that might delay visibility
+        
+        // If hero robot has load event, ensure it's visible
+        heroRobot.addEventListener('load', function() {
+            this.style.opacity = '1';
+            this.style.transform = 'scale(1)';
+            // Re-enable transition after ensuring visibility
+            setTimeout(() => {
+                this.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            }, 100);
+        });
+        
+        // If hero robot is already loaded (cached)
+        if (heroRobot.complete && heroRobot.naturalWidth !== 0) {
+            heroRobot.style.opacity = '1';
+            heroRobot.style.transform = 'scale(1)';
+            // Re-enable transition after ensuring visibility
+            setTimeout(() => {
+                heroRobot.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            }, 100);
+        }
+    }
+    
+    // Add loading animation to other images (but not logo and hero robot)
+    const images = document.querySelectorAll('img:not(.logo):not(.hero-image img)');
     images.forEach(img => {
         img.addEventListener('load', function() {
             this.style.opacity = '1';
             this.style.transform = 'scale(1)';
         });
         
-        // Set initial state
+        // Set initial state for other images
         img.style.opacity = '0';
         img.style.transform = 'scale(0.9)';
         img.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -84,8 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.robot-card, .category-card, .feature-card, .section-title');
+    // Observe elements for animation (but not logo and hero elements)
+    const animateElements = document.querySelectorAll('.robot-card, .category-card, .feature-card, .section-title:not(.hero .section-title)');
     animateElements.forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
