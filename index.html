@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TedouaR Robotics Hub</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ai-assistant.css">
     <link rel="stylesheet" href="styles/logo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fasthand&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -47,7 +48,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hero-robot.svg" alt="Robot Illustration">
+                <img src="images/hero-robot.png" alt="Robot Illustration">
             </div>
         </div>
     </section>
@@ -117,6 +118,21 @@
         </div>
     </div>
 
+    <!-- AI Assistant Chat Interface -->
+    <div class="ai-chat-container" id="ai-chat-container">
+        <div class="ai-chat-header">
+            <div class="ai-chat-title">Robotics Consultant</div>
+            <div class="ai-chat-close" id="ai-chat-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages">
+            <!-- Messages will be populated by JavaScript -->
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="ai-input" placeholder="Tell me about your robotics needs...">
+            <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -167,30 +183,9 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="js/ai-assistant.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu handling
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const navLinks = document.querySelector('.nav-links');
-            const authButtons = document.querySelector('.auth-buttons');
-            
-            if (mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', function() {
-                    navLinks.classList.toggle('mobile-active');
-                    authButtons.classList.toggle('mobile-active');
-                });
-            }
-            
-            // AI Assistant button
-            const aiButton = document.getElementById('ai-button');
-            if (aiButton) {
-                aiButton.addEventListener('click', function() {
-                    // Simple redirection to /contact.html with query parameter
-                    window.location.href = 'contact.html?assistant=open';
-                });
-            }
-            
             // Load featured robots
             loadFeaturedRobots();
         });
