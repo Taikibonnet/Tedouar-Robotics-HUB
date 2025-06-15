@@ -253,6 +253,12 @@
             left: 100%;
         }
 
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
         .social-links-section {
             padding: 50px 0;
             text-align: center;
@@ -396,6 +402,25 @@
             text-shadow: 0 0 10px var(--primary-color);
         }
 
+        .form-status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .form-status.success {
+            background-color: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            color: #00ff00;
+        }
+
+        .form-status.error {
+            background-color: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            color: #ff6b6b;
+        }
+
         @media (max-width: 992px) {
             .contact-container {
                 grid-template-columns: 1fr;
@@ -508,7 +533,7 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Email Us</h3>
-                                <p><a href="mailto:info@tedouarrobotics.com">info@tedouarrobotics.com</a></p>
+                                <p><a href="mailto:tedouar.robotics@gmail.com">tedouar.robotics@gmail.com</a></p>
                             </div>
                         </div>
 
@@ -518,7 +543,7 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Call Us</h3>
-                                <p><a href="tel:+12025550156">+1 (202) 555-0156</a></p>
+                                <p><a href="tel:+33745275107">+33 7 45 27 51 07</a></p>
                             </div>
                         </div>
 
@@ -528,7 +553,7 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Visit Us</h3>
-                                <p>1234 Innovation Drive<br>Silicon Valley, CA 94025<br>United States</p>
+                                <p>26 rue des Tourelles<br>Paris 75020<br>France</p>
                             </div>
                         </div>
 
@@ -538,19 +563,19 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Business Hours</h3>
-                                <p>Monday - Friday: 9:00 AM - 6:00 PM (PST)<br>Weekends: By appointment only</p>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM (CET)<br>Weekends: By appointment only</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202818.76303996087!2d-122.37539090725652!3d37.40290597047558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1651322251229!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.3668834442596!2d2.404287576941726!3d48.87050907133414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d8c0c5b5b5b%3A0x8f8f8f8f8f8f8f8f!2s26%20Rue%20des%20Tourelles%2C%2075020%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
 
                 <div class="contact-form">
                     <h2 class="contact-title">Send Us a Message</h2>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>
@@ -571,7 +596,18 @@
                             <textarea id="message" name="message" class="form-control" required></textarea>
                         </div>
 
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <!-- Hidden field to specify the recipient email -->
+                        <input type="hidden" name="_to" value="tedouar.robotics@gmail.com">
+                        
+                        <!-- Optional: Redirect after submission -->
+                        <input type="hidden" name="_next" value="https://taikibonnet.github.io/Tedouar-Robotics-HUB/contact.html?success=true">
+                        
+                        <!-- Optional: Subject prefix -->
+                        <input type="hidden" name="_subject" value="New message from TedouaR Robotics Hub website">
+
+                        <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                        
+                        <div class="form-status" id="formStatus"></div>
                     </form>
                 </div>
             </div>
@@ -700,23 +736,22 @@
         // Contact form submission
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const formStatus = document.getElementById('formStatus');
+            
+            // Check if page was redirected after successful form submission
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                showFormStatus('Thank you! Your message has been sent successfully. We\'ll get back to you soon.', 'success');
+            }
             
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const subject = document.getElementById('subject').value;
-                    const message = document.getElementById('message').value;
-                    
-                    // Here you would typically send the data to a server
-                    // For now, we'll just show a success message
-                    alert(`Thank you ${name} for contacting us! We'll get back to you soon.`);
-                    
-                    // Clear the form
-                    contactForm.reset();
+                    // Let the form submit naturally to Formspree
+                    // But show loading state
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    showFormStatus('Sending your message...', 'success');
                 });
             }
 
@@ -737,6 +772,12 @@
                     // Clear the form
                     newsletterForm.reset();
                 });
+            }
+            
+            function showFormStatus(message, type) {
+                formStatus.textContent = message;
+                formStatus.className = `form-status ${type}`;
+                formStatus.style.display = 'block';
             }
         });
     </script>
