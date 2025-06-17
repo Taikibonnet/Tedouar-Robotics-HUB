@@ -52,6 +52,7 @@
                         <label for="category-filter">Category</label>
                         <select id="category-filter">
                             <option value="all">All Categories</option>
+                            <option value="mecha">Mecha</option>
                             <option value="industrial">Industrial</option>
                             <option value="humanoid">Humanoid</option>
                             <option value="service">Service</option>
@@ -83,31 +84,6 @@
         </div>
     </section>
 
-    <!-- AI Assistant Button -->
-    <div class="ai-assistant">
-        <div class="ai-button" id="ai-button">
-            <div class="ai-icon"><i class="fas fa-robot"></i></div>
-        </div>
-    </div>
-
-    <!-- AI Assistant Chat Interface (Hidden by default) -->
-    <div class="ai-chat-container" id="ai-chat-container">
-        <div class="ai-chat-header">
-            <div class="ai-chat-title">Robot Assistant</div>
-            <div class="ai-chat-close" id="ai-chat-close"><i class="fas fa-times"></i></div>
-        </div>
-        <div class="ai-chat-messages" id="ai-chat-messages">
-            <div class="ai-message">
-                <div class="ai-avatar"><i class="fas fa-robot"></i></div>
-                <div class="ai-bubble">Hello! I'm your robotics guide. How can I help you explore the world of robots today?</div>
-            </div>
-        </div>
-        <div class="ai-chat-input">
-            <input type="text" id="ai-input" placeholder="Ask me about robots...">
-            <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -136,7 +112,7 @@
                         <li><a href="encyclopedia.html?category=industrial">Industrial Robotics</a></li>
                         <li><a href="encyclopedia.html?category=service">Service Robots</a></li>
                         <li><a href="encyclopedia.html?category=humanoid">Humanoids</a></li>
-                        <li><a href="encyclopedia.html?category=space">Space Robotics</a></li>
+                        <li><a href="encyclopedia.html?category=mecha">Mecha Robots</a></li>
                     </ul>
                 </div>
                 
@@ -158,8 +134,6 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/ai-assistant.js"></script>
-    <script src="js/auth.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu handling
@@ -171,15 +145,6 @@
                 mobileMenuButton.addEventListener('click', function() {
                     navLinks.classList.toggle('mobile-active');
                     authButtons.classList.toggle('mobile-active');
-                });
-            }
-            
-            // AI Assistant button
-            const aiButton = document.getElementById('ai-button');
-            if (aiButton) {
-                aiButton.addEventListener('click', function() {
-                    // Simple redirection to /contact.html with query parameter
-                    window.location.href = 'contact.html?assistant=open';
                 });
             }
             
@@ -198,7 +163,6 @@
             
             if (searchInput) {
                 searchInput.addEventListener('input', function() {
-                    // Debounce search to avoid too many searches while typing
                     clearTimeout(searchInput.timer);
                     searchInput.timer = setTimeout(filterRobots, 300);
                 });
@@ -209,7 +173,6 @@
             const categoryParam = urlParams.get('category');
             
             if (categoryParam && categoryFilter) {
-                // Set the filter dropdown to match URL parameter
                 const options = Array.from(categoryFilter.options);
                 const matchingOption = options.find(option => 
                     option.value.toLowerCase() === categoryParam.toLowerCase()
@@ -217,11 +180,9 @@
                 
                 if (matchingOption) {
                     categoryFilter.value = matchingOption.value;
-                    // Trigger the filter to apply immediately
                     filterRobots();
                 }
             } else {
-                // Load all robots on initial page load if no filter specified
                 filterRobots();
             }
         });
@@ -295,7 +256,6 @@
                             robotGrid.appendChild(createRobotCard(robot));
                         });
                     } else {
-                        // No robots found
                         robotGrid.innerHTML = `
                             <div class="no-results">
                                 <h2>No robots found</h2>
@@ -331,7 +291,7 @@
             
             card.innerHTML = `
                 <div class="robot-card-image">
-                    <img src="${imageUrl}" alt="${robot.title}">
+                    <img src="${imageUrl}" alt="${robot.title}" loading="lazy">
                 </div>
                 <div class="robot-card-content">
                     <h3 class="robot-card-title">${robot.title}</h3>
