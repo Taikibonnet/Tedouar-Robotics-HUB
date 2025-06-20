@@ -417,7 +417,7 @@
     "manufacturer": "Kubota Corporation",
     "category": "Agricultural",
     "featured": true,
-    "image": "images/robots/kubota-katr/Image 1.jpg",
+    "image": "images/robots/kubota-katr/KATR-feature.jpeg",
     "description": "Kubota's KATR is a compact, hydraulically legged all-terrain robot offering stable cargo transport across slopes and rugged environments.",
     "fullDescription": "Developed by Kubota Corporation, KATR (Kubota All-Terrain Robot) is a four-wheeled robotic platform with hydraulically actuated legs that adjust in real-time to maintain a level cargo deck on uneven terrain. Launched in 2024, it received the CES® 2025 Innovation Awards' 'Best of Innovation' in Industrial Equipment & Machinery. Designed for agriculture, construction, forestry, and disaster relief, it excels in areas where traditional machinery struggles. The innovative design combines the stability of tracked vehicles with the agility of legged robots, making it perfect for precision farming and challenging terrain operations.",
     "specifications": {
@@ -457,9 +457,9 @@
       }
     ],
     "images": [
-      "images/robots/kubota-katr/Image 1.jpg",
-      "images/robots/kubota-katr/Image 2.jpg",
-      "images/robots/kubota-katr/Image 3.jpg"
+      "images/robots/kubota-katr/KATR-feature.jpeg",
+      "images/robots/kubota-katr/KATR-operation.webp",
+      "images/robots/kubota-katr/KATR-typeV.jpg"
     ],
     "sources": [
       {
