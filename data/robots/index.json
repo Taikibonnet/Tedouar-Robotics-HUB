@@ -1,0 +1,6 @@
+{
+  "description": "Directory for storing individual robot data files",
+  "files": [
+    "robot-example-new.json"
+  ]
+}
