@@ -1,0 +1,52 @@
+[
+  {
+    "id": "example-new-robot",
+    "title": "Example New Robot",
+    "slug": "example-new-robot",
+    "manufacturer": "Future Robotics Inc.",
+    "category": "Service",
+    "featured": true,
+    "image": "images/robots/placeholder.jpg",
+    "description": "This is an example of how to add a new robot to your encyclopedia using the modular system.",
+    "fullDescription": "This example robot demonstrates the new modular robot management system. You can create individual JSON files for each new robot, making it easier to manage your growing collection without having one massive robots.json file. Simply create a new file like this one, add it to the data/robots/ directory, and update the index.json file to include it.",
+    "specifications": {
+      "Height": "1.8 meters (5.9 feet)",
+      "Weight": "75 kg (165 pounds)",
+      "Power Source": "Advanced battery system",
+      "Operating Time": "12 hours continuous operation",
+      "Sensors": "Advanced AI vision system, LIDAR, ultrasonic sensors",
+      "Connectivity": "Wi-Fi 6, 5G, Bluetooth 5.0"
+    },
+    "capabilities": [
+      "Advanced Navigation: Autonomous movement through complex environments",
+      "Task Automation: Performs various service tasks with minimal supervision",
+      "Human Interaction: Natural language processing for communication",
+      "Adaptive Learning: Improves performance through experience"
+    ],
+    "applications": [
+      "Hospitality: Hotel and restaurant service",
+      "Healthcare: Patient assistance and support",
+      "Retail: Customer service and inventory management",
+      "Education: Teaching assistant and learning support"
+    ],
+    "videos": [
+      {
+        "title": "Example Robot - Overview",
+        "url": "https://www.youtube.com/watch?v=example",
+        "embedUrl": "https://www.youtube.com/embed/example"
+      }
+    ],
+    "images": [
+      "images/robots/placeholder.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Future Robotics Inc. - Official Website",
+        "url": "https://example.com"
+      }
+    ],
+    "tags": ["Service Robot", "AI", "Automation", "Future Tech"],
+    "releaseYear": "2025",
+    "status": "Concept"
+  }
+]
