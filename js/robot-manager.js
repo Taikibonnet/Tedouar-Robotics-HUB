@@ -178,7 +178,7 @@ class RobotManager {
         }
     }
 
-    // Render robots to the page
+    // Render robots to the page - REMOVED DATA-AOS ANIMATION
     renderRobots(robots = null) {
         const robotsToRender = robots || this.robots;
         const container = document.getElementById('robot-container');
@@ -202,10 +202,11 @@ class RobotManager {
         }
 
         const robotCards = robotsToRender.map(robot => `
-            <div class="robot-card" data-aos="fade-up">
+            <div class="robot-card">
                 <div class="robot-card-image">
                     <img src="${robot.image}" alt="${robot.title}" 
-                         onerror="this.src='images/robots/placeholder.jpg'">
+                         onerror="this.src='images/robots/placeholder.jpg'" 
+                         loading="eager">
                 </div>
                 <div class="robot-card-content">
                     <h3 class="robot-card-title">${robot.title}</h3>
