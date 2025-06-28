@@ -1,0 +1,122 @@
+/* Robot Detail Page Image Display Fixes - Immediate Image Visibility */
+
+/* Override ALL animations and transitions for images on robot detail pages */
+.robot-hero-image img,
+.gallery-image img,
+.robot-main-image img,
+.detail-image-item img,
+.robot-image-item img {
+    /* Force immediate visibility - no animations */
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    display: block !important;
+    animation: none !important;
+    transition: none !important;
+    
+    /* Standard image properties */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Robot hero section image container */
+.robot-hero-image {
+    position: relative;
+    /* Remove floating animation that might cause issues */
+    animation: none !important;
+    display: flex;
+    justify-content: center;
+}
+
+/* Gallery images container */
+.gallery-image {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(32, 227, 178, 0.2);
+    /* Remove scale animation on hover that might interfere */
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    /* Keep only safe hover effects */
+    box-shadow: 0 15px 30px rgba(32, 227, 178, 0.4);
+    /* Remove transform: scale that can cause issues */
+    transform: none;
+}
+
+/* Image gallery grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Media section fixes */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Ensure no lazy loading or intersection observer issues */
+img[loading="lazy"] {
+    loading: eager !important;
+}
+
+/* Force immediate image display on page load */
+.robot-hero-image img {
+    /* Critical: Remove any initial opacity or transform states */
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    visibility: visible !important;
+    display: block !important;
+    
+    /* Ensure proper sizing */
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(32, 227, 178, 0.2);
+}
+
+/* Fix for any potential CSS animation interference */
+* {
+    /* Prevent any inherited animations from affecting images */
+    animation-play-state: running;
+}
+
+/* Specific fixes for robot detail pages */
+body .robot-hero-image img,
+body .gallery-image img {
+    /* Use body prefix for higher specificity */
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: opacity 0.1s ease !important;
+}
+
+/* Page load optimization */
+.robot-hero-image,
+.gallery-image,
+.image-gallery {
+    /* Ensure containers are ready */
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 992px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
