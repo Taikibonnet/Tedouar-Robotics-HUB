@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archax - TedouaR Robotics Hub</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/robot-detail-fixes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .robot-hero {
@@ -73,6 +74,7 @@
 
         .robot-hero-image {
             position: relative;
+            animation: none !important;
         }
 
         .robot-hero-image img {
@@ -218,11 +220,13 @@
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(32, 227, 178, 0.2);
-            transition: transform 0.3s ease;
+            /* FIXED: Remove problematic scale animation */
+            transition: box-shadow 0.3s ease;
         }
 
         .gallery-image:hover {
-            transform: scale(1.05);
+            /* FIXED: Only change box-shadow, not transform */
+            box-shadow: 0 15px 30px rgba(32, 227, 178, 0.4);
         }
 
         .gallery-image img {
@@ -581,6 +585,16 @@
                     authButtons.classList.toggle('mobile-active');
                 });
             }
+
+            // CRITICAL: Force immediate image display
+            const allImages = document.querySelectorAll('img');
+            allImages.forEach(function(img) {
+                img.style.opacity = '1';
+                img.style.visibility = 'visible';
+                img.style.display = 'block';
+                img.style.transform = 'none';
+                img.style.animation = 'none';
+            });
         });
     </script>
 </body>
