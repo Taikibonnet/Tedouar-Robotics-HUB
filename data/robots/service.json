@@ -1,0 +1,46 @@
+[
+  {
+    "id": "peanut",
+    "title": "Peanut",
+    "slug": "peanut",
+    "manufacturer": "Peanut Robotics",
+    "category": "Service",
+    "featured": true,
+    "image": "images/robots/peanut/Peanut-main.png",
+    "description": "AI-powered cleaning robot designed for commercial spaces, operating autonomously with advanced navigation and disinfection capabilities.",
+    "fullDescription": "Peanut is an advanced cleaning robot developed by Peanut Robotics, aimed at automating cleaning tasks in commercial environments such as hotels, offices, and stores.",
+    "specifications": {
+      "Navigation": "Autonomous movement with advanced AI and transformer-based technology",
+      "Cleaning Mechanism": "Equipped with specialized cloth for surface cleaning and disinfection",
+      "Disinfection": "EPA-rated chemicals with 99.999% efficacy against human coronaviruses",
+      "Operation Time": "Continuous operation with periodic charging cycles",
+      "Mobility": "Wheeled base with omnidirectional movement capabilities"
+    },
+    "capabilities": [
+      "Autonomous Cleaning: Independent cleaning without human supervision",
+      "Advanced Navigation: Reaches tight areas using AI pathfinding",
+      "Continuous Learning: Enhances processes through data collection",
+      "Disinfection: Medical-grade disinfection with EPA-rated solutions"
+    ],
+    "applications": [
+      "Hospitality: Hotels and resorts for automated cleaning",
+      "Corporate: Office buildings for routine maintenance",
+      "Retail: Commercial outlets for floor cleaning",
+      "Healthcare: Medical facilities for specialized cleaning"
+    ],
+    "videos": [
+      {
+        "title": "Peanut - Autonomous Commercial Cleaning Robot",
+        "url": "https://www.youtube.com/watch?v=gTvor0XWtcs",
+        "embedUrl": "https://www.youtube.com/embed/gTvor0XWtcs"
+      }
+    ],
+    "images": [
+      "images/robots/peanut/Peanut-main.png",
+      "images/robots/peanut/Peanut-operation.png"
+    ],
+    "tags": ["Service Robot", "Cleaning", "AI", "Commercial"],
+    "releaseYear": "2023",
+    "status": "Commercial"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "archax",
+    "title": "Archax",
+    "slug": "archax",
+    "manufacturer": "Tsubame Industries",
+    "category": "Mecha",
+    "featured": true,
+    "image": "images/robots/archax/archax-main.jpg",
+    "description": "A 4.5-meter-tall, 3.5-ton pilotable mecha robot blending anime aesthetics with real-world engineering, offering dual operation modes.",
+    "fullDescription": "Developed by Tokyo-based startup Tsubame Industries, Archax is a groundbreaking pilotable robot that brings the world of science fiction into reality.",
+    "specifications": {
+      "Height": "4.5 meters (14.8 feet)",
+      "Weight": "3.5 tons (7,700 pounds)",
+      "Operation Modes": "Robot Mode / Vehicle Mode",
+      "Top Speed": "10 km/h (Vehicle Mode)",
+      "Power Source": "Battery-powered (DC300V)",
+      "Control Interface": "2 Joysticks, 2 Pedals, Touchscreen"
+    },
+    "capabilities": [
+      "Pilotable Cockpit: Comprehensive control interfaces for human operation",
+      "Dual Operation Modes: Versatile movement between Robot Mode and Vehicle Mode",
+      "Advanced Camera System: 360-degree visibility through 9-camera setup"
+    ],
+    "applications": [
+      "Entertainment: Exhibitions, theme parks, and promotional events",
+      "Research & Development: Testing platform for advanced robotics technologies"
+    ],
+    "videos": [
+      {
+        "title": "Archax - Pilotable Mecha Robot Demonstration",
+        "url": "https://www.youtube.com/watch?v=9OuePFOk0NY",
+        "embedUrl": "https://www.youtube.com/embed/9OuePFOk0NY"
+      }
+    ],
+    "images": [
+      "images/robots/archax/archax-main.jpg",
+      "images/robots/archax/archax-cockpit.jpeg",
+      "images/robots/archax/archax-demo.jpeg",
+      "images/robots/archax/archax-top-to-bottom.webp"
+    ],
+    "tags": ["Mecha", "Pilotable Robot", "Tsubame Industries"],
+    "releaseYear": "2023",
+    "status": "Limited Production",
+    "price": "$2.7 million USD"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tesla-optimus",
+    "title": "Tesla Optimus",
+    "slug": "tesla-optimus",
+    "manufacturer": "Tesla, Inc.",
+    "category": "Humanoid",
+    "featured": true,
+    "image": "images/robots/tesla optimus/tesla-optimuis-main.jpg",
+    "description": "Tesla Optimus is a humanoid robot designed to perform manual tasks, blending AI with robotics for future labor automation.",
+    "fullDescription": "Tesla's Optimus (also known as the Tesla Bot) is a general-purpose humanoid robot under development by Tesla, Inc. It was unveiled by Elon Musk during Tesla's AI Day event in August 2021.",
+    "specifications": {
+      "Height": "~5 ft 8 in (~1.73 meters)",
+      "Weight": "~125 pounds (~57 kg)",
+      "Payload Capacity": "~20 pounds (~9 kg)",
+      "Maximum Speed": "~5 miles per hour (~8 km/h)",
+      "Power Source": "Battery pack (estimated 2.3 kWh)",
+      "Processor": "Tesla's Full Self-Driving Computer (FSD Computer)"
+    },
+    "capabilities": [
+      "Mobility: Walking at a moderate pace, navigating complex environments",
+      "Dexterity: Manipulating objects, using tools, picking up delicate or heavy items",
+      "Perception: Understanding its environment via cameras and sensors",
+      "Safety: Designed with lightweight materials to minimize risk to humans"
+    ],
+    "applications": [
+      "Industrial: Manufacturing, warehouse logistics, and material handling",
+      "Domestic: Performing household chores, running errands",
+      "Commercial: Retail, restaurants, and customer service roles",
+      "Healthcare: Supporting elderly or disabled individuals"
+    ],
+    "videos": [
+      {
+        "title": "Tesla Optimus - Official Demonstration",
+        "url": "https://www.youtube.com/watch?v=cpraXaw7dyc",
+        "embedUrl": "https://www.youtube.com/embed/cpraXaw7dyc"
+      }
+    ],
+    "images": [
+      "images/robots/tesla optimus/tesla-optimuis-main.jpg",
+      "images/robots/tesla optimus/tesla-optimus-cooking.webp",
+      "images/robots/tesla optimus/tesla-optimus-standing.png"
+    ],
+    "tags": ["AI", "Humanoid", "Tesla", "Automation"],
+    "releaseYear": "2021",
+    "status": "In Development"
+  },
+  {
+    "id": "neo-gamma",
+    "title": "NEO Gamma",
+    "slug": "neo-gamma",
+    "manufacturer": "1X Technologies",
+    "category": "Humanoid",
+    "featured": true,
+    "image": "images/robots/neo gamma/neo-gamma-main.webp",
+    "description": "NEO Gamma is a humanoid robot designed for home assistance, offering tasks like cleaning and companionship with advanced AI capabilities.",
+    "fullDescription": "NEO Gamma is a next-generation humanoid robot developed by 1X Technologies, specifically designed for home environments.",
+    "specifications": {
+      "Height": "Approximately 1.65 meters (5.4 feet)",
+      "Weight": "Around 30 kilograms (66 pounds)",
+      "Hands": "Five-fingered hands capable of delicate object manipulation",
+      "AI Capabilities": "Proprietary language model for natural conversation",
+      "Safety Features": "Soft knit suit and tendon-driven joints"
+    },
+    "capabilities": [
+      "Household Chores: Tidying, deep cleaning, and home management",
+      "Natural Conversation: Engaging conversations and companionship",
+      "Adaptive Learning: Learns new tasks through reinforcement learning",
+      "Object Manipulation: Delicate handling with five-fingered hands"
+    ],
+    "applications": [
+      "Home Assistance: Cleaning, organizing, and managing household tasks",
+      "Companionship: Engaging conversations and emotional support",
+      "Elderly Care: Assistance with daily activities and social interaction",
+      "Educational Support: Tutoring and learning assistance"
+    ],
+    "videos": [
+      {
+        "title": "NEO Gamma - Home Assistant Robot Overview",
+        "url": "https://www.youtube.com/watch?v=uVcBa6NXAbk",
+        "embedUrl": "https://www.youtube.com/embed/uVcBa6NXAbk"
+      }
+    ],
+    "images": [
+      "images/robots/neo gamma/neo-gamma-main.webp",
+      "images/robots/neo gamma/neo-gamma-home-service.jpg"
+    ],
+    "tags": ["Humanoid", "Home Assistant", "AI", "Companionship"],
+    "releaseYear": "2024",
+    "status": "In Development"
+  }
+]
