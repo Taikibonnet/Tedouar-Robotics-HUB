@@ -116,12 +116,12 @@
                     <p class="category-description">Large-scale pilotable robots inspired by science fiction and anime.</p>
                 </a>
                 
-                <a href="encyclopedia.html?category=space" class="category-card">
+                <a href="encyclopedia.html?category=quadruped" class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-paw"></i>
                     </div>
-                    <h3 class="category-title">Space</h3>
-                    <p class="category-description">Robots designed for space exploration and extraterrestrial missions.</p>
+                    <h3 class="category-title">Quadruped</h3>
+                    <p class="category-description">Four-legged robots with adaptive locomotion and all-terrain capabilities.</p>
                 </a>
             </div>
         </div>
@@ -164,7 +164,7 @@
                         <li><a href="encyclopedia.html?category=industrial">Industrial Robotics</a></li>
                         <li><a href="encyclopedia.html?category=service">Service Robots</a></li>
                         <li><a href="encyclopedia.html?category=humanoid">Humanoids</a></li>
-                        <li><a href="encyclopedia.html?category=space">Space Robotics</a></li>
+                        <li><a href="encyclopedia.html?category=quadruped">Quadrupeds</a></li>
                         <li><a href="encyclopedia.html?category=mecha">Mecha Robots</a></li>
                         <li><a href="encyclopedia.html?category=consumer">Consumer Robots</a></li>
                     </ul>
@@ -192,6 +192,7 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/featured-loader.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu handling
@@ -215,62 +216,9 @@
                 });
             }
             
-            // Load featured robots
+            // Load featured robots using modular system
             loadFeaturedRobots();
         });
-        
-        // Function to load featured robots
-        function loadFeaturedRobots() {
-            const robotGrid = document.querySelector('.robot-grid');
-            if (!robotGrid) return;
-            
-            fetch('robots.json')
-                .then(response => response.json())
-                .then(robots => {
-                    // Filter featured robots
-                    const featuredRobots = robots.filter(robot => robot.featured === true);
-                    
-                    // Display featured robots (max 3)
-                    const robotsToShow = featuredRobots.slice(0, 3);
-                    
-                    if (robotsToShow.length > 0) {
-                        robotGrid.innerHTML = '';
-                        robotsToShow.forEach(robot => {
-                            const imageUrl = robot.image || 'images/robots/placeholder.jpg';
-                            const truncatedDescription = robot.description.length > 120 ? 
-                                robot.description.substring(0, 120) + '...' : 
-                                robot.description;
-                            
-                            const robotCard = document.createElement('div');
-                            robotCard.className = 'robot-card';
-                            
-                            robotCard.innerHTML = `
-                                <div class="robot-card-image">
-                                    <img src="${imageUrl}" alt="${robot.title}">
-                                </div>
-                                <div class="robot-card-content">
-                                    <h3 class="robot-card-title">${robot.title}</h3>
-                                    <div class="robot-card-categories">
-                                        ${robot.category ? `<span class="category-pill">${robot.category}</span>` : ''}
-                                    </div>
-                                    ${robot.manufacturer ? `<div class="robot-card-manufacturer">${robot.manufacturer}</div>` : ''}
-                                    <p class="robot-card-description">${truncatedDescription}</p>
-                                    <a href="robots/${robot.slug}.html" class="robot-view-details">View Details</a>
-                                </div>
-                            `;
-                            
-                            robotGrid.appendChild(robotCard);
-                        });
-                    } else {
-                        // If no featured robots, show default/sample robots
-                        showDefaultRobots(robotGrid);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading featured robots:', error);
-                    showDefaultRobots(robotGrid);
-                });
-        }
         
         // Function to show default robots if none are featured
         function showDefaultRobots(container) {
