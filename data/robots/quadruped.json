@@ -1,0 +1,125 @@
+[
+  {
+    "id": "unitree-b2w",
+    "title": "Unitree B2-W",
+    "slug": "unitree-b2w",
+    "manufacturer": "Unitree Robotics",
+    "category": "Quadruped",
+    "featured": true,
+    "image": "images/robots/unitree-b2w/unitree-b2w-main.jpg",
+    "description": "Unitree B2‑W is a rugged, wheeled-quadruped robot capable of 20 km/h all-terrain mobility, heavy payloads, and autonomous navigation.",
+    "fullDescription": "The Unitree B2‑W is a hybrid quadruped robot from Unitree Robotics, combining legged agility with wheeled speed. Designed as an industrial/field-grade platform, it adapts to stairs, slopes, rough ground, and flat surfaces with seamless leg-wheel transformation. It's tailored for robust tasks such as inspection, logistics, rescue, and autonomous patrolling.",
+    "specifications": {
+      "Dimensions (Standing)": "1098 × 550 × 758 mm",
+      "Dimensions (Prone)": "950 × 550 × 450 mm",
+      "Weight": "75–85 kg (with battery)",
+      "Battery": "58V, >2 kWh (~2250 Wh)",
+      "Max Speed (Wheels)": "20 km/h (≈5 m/s)",
+      "Max Speed (Legs)": "Up to 6 m/s",
+      "Endurance (No Load)": "5 hours (~70 km)",
+      "Endurance (20kg Load)": "4 hours (~25 km)",
+      "Static Payload": "120 kg",
+      "Dynamic Payload": ">40 kg (while walking)",
+      "Stair Climbing": "20–25 cm continuous, up to 40 cm stepping",
+      "Slope Capability": ">45°",
+      "Jump Distance": ">1.6 m horizontal, 0.5–1.2 m ditch width",
+      "Protection Rating": "IP67 dust/water protection",
+      "Operating Temperature": "–20°C to 55°C",
+      "Processors": "Intel Core i5/i7, optional Nvidia Jetson Orin NX",
+      "Sensors": "3D LiDAR (optional), depth & optical cameras, IMUs"
+    },
+    "capabilities": [
+      "Adaptive Locomotion: Seamlessly switches between wheels and legs for optimal performance",
+      "Terrain Resilience: Excellent balance on gravel, grass, stairs, inclines, and uneven ground",
+      "Obstacle Navigation: Capable of stair navigation and acrobatic maneuvers",
+      "Autonomous Operations: Equipped with mapping, path planning, OTA updates, and remote control",
+      "Heavy Lifting: Can carry over 40 kg while moving and support up to 120 kg statically",
+      "Environmental Durability: IP67 protection enables operation in harsh weather conditions"
+    ],
+    "applications": [
+      "Industrial Inspection: Patrol pipelines, power grids, and remote infrastructures",
+      "Logistics & Transport: Deliver goods across warehouses, farms, mines, or outdoor facilities",
+      "Emergency & Rescue: Navigate disaster zones, rubble, or steep terrain to support rescue teams",
+      "Research & Development: Versatile testbed for payload, sensor integrations, and navigation research",
+      "Security & Surveillance: Autonomous site monitoring with onboard LiDAR and cameras",
+      "Agricultural Operations: Field monitoring, crop inspection, and automated farming tasks"
+    ],
+    "videos": [
+      {
+        "title": "Unitree B2-W - Official Demonstration",
+        "url": "https://www.youtube.com/watch?v=X2UxtKLZnNo",
+        "embedUrl": "https://www.youtube.com/embed/X2UxtKLZnNo"
+      }
+    ],
+    "images": [
+      "images/robots/unitree-b2w/unitree-b2w-main.jpg",
+      "images/robots/unitree-b2w/unitree-b2w-terrain.jpg",
+      "images/robots/unitree-b2w/unitree-b2w-specs.jpg",
+      "images/robots/unitree-b2w/unitree-b2w-side.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Unitree Robotics - Official Website",
+        "url": "https://www.unitree.com/"
+      }
+    ],
+    "tags": ["Quadruped", "All-Terrain", "Autonomous", "Industrial", "Inspection", "Logistics", "Unitree"],
+    "releaseYear": "2024",
+    "status": "Commercial",
+    "price": "~$100,000 USD"
+  },
+  {
+    "id": "corleo",
+    "title": "CORLEO",
+    "slug": "corleo",
+    "manufacturer": "Kawasaki Heavy Industries",
+    "category": "Quadruped",
+    "featured": true,
+    "image": "images/robots/corleo/corleo-main.jpg",
+    "description": "CORLEO is a hydrogen-powered quadruped robot by Kawasaki, designed to revolutionize off-road transportation with AI and adaptive mobility.",
+    "fullDescription": "CORLEO is an innovative quadruped robot developed by Kawasaki Heavy Industries, unveiled at the Osaka-Kansai Expo in April 2025. Combining Kawasaki's expertise in robotics and motorcycle engineering, CORLEO is designed as a rideable, hydrogen-powered robotic horse aimed at transforming off-road transportation.",
+    "specifications": {
+      "Design": "Quadruped structure resembling a robotic horse with motorcycle elements",
+      "Power Source": "Hydrogen-fueled 150cc engine powering electric drive systems",
+      "Mobility": "Four robotic legs with rubber hooves for navigating diverse terrains",
+      "AI Integration": "Artificial intelligence for balance, coordination, and real-time adaptation",
+      "Capacity": "Designed to carry up to two riders",
+      "Emissions": "Zero harmful emissions - only water vapor",
+      "Terrain Capability": "Grasslands, rocky areas, rubble fields, and complex off-road environments"
+    },
+    "capabilities": [
+      "Terrain Navigation: Navigates complex terrains including grasslands, rocky areas, and rubble fields",
+      "Real-time Adaptation: Adjusts to rider's movements in real-time to maintain balance and stability",
+      "Eco-friendly Operation: Provides zero harmful emissions transportation with hydrogen power",
+      "Autonomous Navigation: Advanced sensors and AI for obstacle avoidance and path planning",
+      "Multi-rider Support: Designed to safely carry up to two riders simultaneously"
+    ],
+    "applications": [
+      "Transportation: Potential future alternative for off-road travel and exploration",
+      "Emergency Services: Could be adapted for search and rescue operations in challenging terrains",
+      "Recreational Use: Novel experience for adventure enthusiasts and tourists",
+      "Exhibitions and Demonstrations: Showcases advancements in robotics and sustainable transportation"
+    ],
+    "videos": [
+      {
+        "title": "CORLEO - Kawasaki's Rideable Robot Horse",
+        "url": "https://www.youtube.com/watch?v=vQDhzbTz-9k",
+        "embedUrl": "https://www.youtube.com/embed/vQDhzbTz-9k"
+      }
+    ],
+    "images": [
+      "images/robots/corleo/corleo-main.jpg",
+      "images/robots/corleo/corleo-side-view.jpg",
+      "images/robots/corleo/corleo-cockpit-view.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Kawasaki Heavy Industries - CORLEO Concept",
+        "url": "https://www.khi.co.jp/expo2025/concept01/index.html"
+      }
+    ],
+    "tags": ["Quadruped", "Kawasaki", "Hydrogen", "Transportation", "AI", "Motorcycle", "Off-road", "Sustainable"],
+    "releaseYear": "2025",
+    "status": "Concept"
+  }
+]
