@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "mecha",
+      "name": "Mecha",
+      "description": "Large-scale pilotable robots",
+      "file": "data/robots/mecha.json"
+    },
+    {
+      "id": "humanoid", 
+      "name": "Humanoid",
+      "description": "Human-like robots",
+      "file": "data/robots/humanoid.json"
+    },
+    {
+      "id": "quadruped",
+      "name": "Quadruped", 
+      "description": "Four-legged robots",
+      "file": "data/robots/quadruped.json"
+    },
+    {
+      "id": "service",
+      "name": "Service",
+      "description": "Service and cleaning robots",
+      "file": "data/robots/service.json"
+    },
+    {
+      "id": "industrial",
+      "name": "Industrial",
+      "description": "Industrial and manufacturing robots",
+      "file": "data/robots/industrial.json"
+    },
+    {
+      "id": "mobility",
+      "name": "Mobility",
+      "description": "Transportation and mobility robots",
+      "file": "data/robots/mobility.json"
+    },
+    {
+      "id": "agricultural",
+      "name": "Agricultural",
+      "description": "Farming and agriculture robots",
+      "file": "data/robots/agricultural.json"
+    }
+  ],
+  "featured": [
+    {
+      "id": "archax",
+      "category": "mecha"
+    },
+    {
+      "id": "tesla-optimus", 
+      "category": "humanoid"
+    },
+    {
+      "id": "unitree-b2w",
+      "category": "quadruped"
+    }
+  ],
+  "stats": {
+    "totalRobots": 9,
+    "lastUpdated": "2025-07-07"
+  }
+}
