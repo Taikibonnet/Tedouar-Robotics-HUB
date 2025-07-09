@@ -1,0 +1,71 @@
+[
+  {
+    "id": "kubota-katr",
+    "title": "Kubota KATR",
+    "slug": "kubota-katr",
+    "manufacturer": "Kubota Corporation",
+    "category": "Agricultural",
+    "featured": true,
+    "image": "images/robots/kubota-katr/KATR-feature.jpeg",
+    "description": "Kubota's KATR is a compact, hydraulically legged all-terrain robot offering stable cargo transport across slopes and rugged environments.",
+    "fullDescription": "Developed by Kubota Corporation, KATR (Kubota All-Terrain Robot) is a four-wheeled robotic platform with hydraulically actuated legs that adjust in real-time to maintain a level cargo deck on uneven terrain. Launched in 2024, it received the CES® 2025 Innovation Awards' 'Best of Innovation' in Industrial Equipment & Machinery. Designed for agriculture, construction, forestry, and disaster relief, it excels in areas where traditional machinery struggles. The innovative design combines the stability of tracked vehicles with the agility of legged robots, making it perfect for precision farming and challenging terrain operations.",
+    "specifications": {
+      "Payload Capacity": "Up to 240–284 kg (approximately 530 lb)",
+      "Wheel & Leg System": "Dual-wheel per leg; hydraulic legs adjust to terrain to keep the deck level",
+      "Powertrain": "Available with either combustion engine or electric drive (electric variant in development)",
+      "Size & Compactness": "Small enough to fit into a light pickup truck bed or commercial minivan",
+      "Control Modes": "Operable via onboard controller or remote control",
+      "Stability System": "Proprietary real-time algorithm and sensor suite dynamically maintain level cargo platform on slopes",
+      "Steering": "Pivot-turn capability enables operation in tight spaces",
+      "Terrain Capability": "Handles slopes, uneven ground, and challenging agricultural environments"
+    },
+    "capabilities": [
+      "Level Cargo Deck: Hydraulic leg adjustments handle slopes and uneven ground seamlessly",
+      "Robust Multi-Terrain Mobility: Four-wheel drive, each on independent hydraulic legs, allow traversing rugged off-road environments",
+      "Versatile Deployment: Supports agriculture, forestry, construction, and disaster relief operations",
+      "Modular Platform: Cargo deck can carry tools, sensors, or even serve as a working platform",
+      "Flexible Power Options: Users can choose combustion or full-electric variant to match use case and sustainability goals"
+    ],
+    "applications": [
+      "Agriculture: Especially effective in hilly or terraced farms, orchards, and vineyards; modular attachments (sprayers, sensors) aid in precision farming",
+      "Construction & Forestry: Transport materials and operate equipment on steep, uneven terrain",
+      "Disaster Response: Delivers supplies over rubble or landslide-affected areas where wheeled vehicles struggle",
+      "Research & Development: Acts as a scalable platform for experimenting with attachments (e.g., pruners, imagers, robotic arms)",
+      "Vineyard Operations: Perfect for navigating between vine rows and carrying harvesting equipment on slopes"
+    ],
+    "videos": [
+      {
+        "title": "Kubota KATR - All-Terrain Agricultural Robot",
+        "url": "https://www.youtube.com/watch?v=t4R7Z1XbLew",
+        "embedUrl": "https://www.youtube.com/embed/t4R7Z1XbLew"
+      },
+      {
+        "title": "Kubota KATR - Vineyard Operations Demo",
+        "url": "https://www.youtube.com/watch?v=baEa1LkIye0",
+        "embedUrl": "https://www.youtube.com/embed/baEa1LkIye0"
+      }
+    ],
+    "images": [
+      "images/robots/kubota-katr/KATR-feature.jpeg",
+      "images/robots/kubota-katr/KATR-operation.webp",
+      "images/robots/kubota-katr/KATR-typeV.jpg"
+    ],
+    "sources": [
+      {
+        "title": "Kubota Corporation - KATR Official News",
+        "url": "https://www.kubota.com/news/2025/20250310.html"
+      },
+      {
+        "title": "Drone.jp - Kubota KATR Coverage",
+        "url": "https://www.drone.jp/news/20241123160032104227.html"
+      },
+      {
+        "title": "Farm Progress - Kubota Robots Bring Versatility to the Vineyard",
+        "url": "https://www.farmprogress.com/farming-equipment/kubota-robots-bring-versatility-to-the-vineyard"
+      }
+    ],
+    "tags": ["Agricultural Robot", "All-Terrain", "Hydraulic Legs", "Precision Farming", "Kubota", "CES Innovation Award", "Level Platform"],
+    "releaseYear": "2024",
+    "status": "Commercial"
+  }
+]
