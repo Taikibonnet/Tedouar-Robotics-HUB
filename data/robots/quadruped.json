@@ -6,7 +6,7 @@
     "manufacturer": "Unitree Robotics",
     "category": "Quadruped",
     "featured": true,
-    "image": "images/robots/unitree-b2w/unitree-b2w-main.jpg",
+    "image": "images/robots/unitree B2-W/main_B2-W.webp",
     "description": "Unitree B2‑W is a rugged, wheeled-quadruped robot capable of 20 km/h all-terrain mobility, heavy payloads, and autonomous navigation.",
     "fullDescription": "The Unitree B2‑W is a hybrid quadruped robot from Unitree Robotics, combining legged agility with wheeled speed. Designed as an industrial/field-grade platform, it adapts to stairs, slopes, rough ground, and flat surfaces with seamless leg-wheel transformation. It's tailored for robust tasks such as inspection, logistics, rescue, and autonomous patrolling.",
     "specifications": {
@@ -52,10 +52,9 @@
       }
     ],
     "images": [
-      "images/robots/unitree-b2w/unitree-b2w-main.jpg",
-      "images/robots/unitree-b2w/unitree-b2w-terrain.jpg",
-      "images/robots/unitree-b2w/unitree-b2w-specs.jpg",
-      "images/robots/unitree-b2w/unitree-b2w-side.jpg"
+      "images/robots/unitree B2-W/main_B2-W.webp",
+      "images/robots/unitree B2-W/B2-example.png",
+      "images/robots/unitree B2-W/descriptive image B2.webp"
     ],
     "sources": [
       {
